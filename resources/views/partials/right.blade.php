@@ -1,3 +1,4 @@
+<div class="col-md-6 col-md-offset-6"></div>
 <div class="col-md-4">
     <div class="row">
         <div class="col-md-11">
@@ -22,7 +23,7 @@
 
                             <div class="trending_notifications" style="background-color:#e8e8e8">
                                 <div id="trending_image2" class="image_icon" style="background:url('images/underconstruction.png') no-repeat;background-size:90% 90%;background-position:50% 50%">
-                                </div>@include ('partials.right')
+                                </div>
                                 <div id="trending_text2" class="trending_text">
                                     <p class="size">The words in bold type were those added by Regorco.</p>
                                 </div>
