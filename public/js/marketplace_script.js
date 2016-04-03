@@ -8,21 +8,33 @@ $(document).ready(function(){
 	});
 	$(".collapsible-body").hide();
 	$(".collapsible-inner_body").hide();
+
 	$(".collapsible-header").click(function(){
-		$(".collapsible-body").slideToggle();
-	});
-	
+		$(this).toggleClass("active");
+		$(this).next().slideToggle();
+
+		$(".collapsible-header").not(this).each(function(){
+			$(this).next().slideUp();
+			$(this).removeClass("active");
+		});
+
+	})
+
 	$(".collapsible-inner_header").click(function(){
-		$(".collapsible-inner_body").slideToggle();
+		$(this).toggleClass("active_inner");
+		$(this).next().slideToggle();
+
+		$(".collapsible-inner_header").not(this).each(function(){
+			$(this).next().slideUp();
+			$(this).removeClass("active_inner");
+		});
 	});
-	$(".item").click(function(){
-		$(this).toggleClass('item_decoration');
-	});
-	$(".sub_item").click(function(){
-		$(this).toggleClass('sub_item_decoration');
-	});
+
 	$(".sub-sub_item").click(function(){
 		$(this).toggleClass('sub-sub_item_decoration');
+		$(".sub-sub_item").not(this).each(function(){
+			$(this).removeClass("sub-sub_item_decoration");
+		});
 	});
 	$("#trending_lists").show();
 	$("#messages_lists").hide();

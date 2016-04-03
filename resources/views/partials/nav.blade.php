@@ -51,3 +51,4 @@
 
 
 @include ('partials.left_overlap')
+@include ('partials.left')

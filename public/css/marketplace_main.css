@@ -1,6 +1,8 @@
 .col-md-2 {
 	width:15%;
-	margin-top:70px;
+	margin-top:55px;
+	height:150vh;
+	padding-top:13px;
 }
 .col-md-6 {
 	width:55%;
@@ -10,10 +12,19 @@
 	width:30%;
 	margin-top:70px;
 }
+.collapsible-header.active {
+	color:red;
+	font-weight:bold;
+	text-decoration:none;
+	font-size:15px;
+}
 
-
-
-
+.collapsible-inner_header.active_inner {
+	color:#ff7b5a;
+	font-weight:bold;
+	text-decoration:none;
+	font-size:13px;
+}
 .pushmenu {
 	z-index:10001;
 	position:fixed;
@@ -105,6 +116,7 @@ a{
 
 a:focus {
 	outline:none;
+	color:#000;
 }
 
 .navbar-default{
@@ -135,24 +147,35 @@ a:focus {
 
 /*left menu*/
 
+.item:hover {
+	color:#000;
+}
+
+.item {
+	font-size:16px;
+}
+
 .item_level_1 {
-	border-bottom:1px solid #FF6D5A;
+	border-bottom:1px solid #000;
 	text-align:left;
-	padding:3px;
-	padding-top:5px;
+	padding:10px;
+	padding-top:13px;
+
+
 }
 
 .item_level_1:hover {
-	padding-left:5px;
-	border-bottom:2px solid #ff6d5a;
+	padding:10px;
+	border-bottom:2px solid #000;
+	color:#000;
 }
 
 
 
 .demo-card-square.mdl-card {
-  width: 220px;
-  height: 300px;
-  padding:10px;
+  width: 200px;
+  height: 280px;
+  padding:15px;
   border-right:1px solid #ff6d5a;
  
  
@@ -170,12 +193,10 @@ a:focus {
 
 .column {
 	width:200px;
+	-webkit-transform-style: preserve-3d; /* Chrome, Safari, Opera */
+	transform-style: preserve-3d;
 }
 
-#wrapper:hover {
-	background-color: #939393;
-
-}
 
 a {
 	text-decoration:none;
@@ -194,6 +215,7 @@ li {
 
 .carousel {
 	height:350px;
+
 }
 
 a:focus {
@@ -201,31 +223,11 @@ a:focus {
 }
 
 
-
-.item:hover {
-	color:#FF6D5A;
-}
-
-.item:visited {
-	color:#000;
-}
-
-.item.item_decoration {
-	color:red;
-	font-weight:bold;
-	text-decoration:none;
-}
-
-.sub_item.sub_item_decoration {
-	color:#ff7b5a;
-	font-weight:bold;
-	text-decoration:none;
-}
-
 .sub-sub_item.sub-sub_item_decoration {
 	color:#ff975a;
 	font-weight:bold;
 	text-decoration:none;
+	font-size:12px;
 }
 #trending {
 	height:200px;
