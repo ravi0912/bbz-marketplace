@@ -1,0 +1,211 @@
+.col-md-6 {
+	width:55%;
+	margin-top:70px;
+}
+.col-md-4 {
+	width:30%;
+	margin-top:70px;
+}
+.collapsible-header.active {
+	color:red;
+	font-weight:bold;
+	text-decoration:none;
+	font-size:15px;
+}
+
+.collapsible-inner_header.active_inner {
+	color:#ff7b5a;
+	font-weight:bold;
+	text-decoration:none;
+	font-size:13px;
+}
+.pushmenu {
+	z-index:10001;
+	position:fixed;
+	top:0;
+	left:0;
+	width:200px;
+	height:100%;
+	background-color: #FF6D5A;
+	text-align: center;
+	-webkit-transform:translateX(-100%);
+	transform:translateX(-100%);
+	-webkit-transition:-webkit-transform 0.6s ease;
+	transition:transform 0.6s ease;
+}
+
+.pushmenu.open_menu {
+	-webkit-transform:translateX(0);
+	transform:translateX(0);
+}
+
+.list_item {
+	padding-top: 8px;
+	
+}
+
+.sidemenu_item {
+	color:#fff;
+	font-size: 15px;
+	text-align: center;
+
+}
+
+.sidemenu_item:hover {
+	color:#fff;
+	padding: 1%;
+}
+
+.list_item:hover {
+	background-color: #9696ff;
+
+}
+
+.menu_toggle {
+	z-index:100;
+	position:fixed;
+	-webkit-transform:translate(-14px,250px);
+	transform:translate(-14px,250px);
+	-webkit-transition:-webkit-transform 0.6s ease;
+	transition:transform 0.6s ease;
+}
+
+.menu_toggle.move {
+	-webkit-transform:translate(186px,250px);
+	transform:translate(186px,250px);
+}
+
+.social_icons {
+	
+	position:absolute;
+    text-align: center;
+    padding:1%;
+    bottom:1vh;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+.icon_list {
+	display:inline;
+	padding: 3px;
+	font-size: 20px;
+	color:#fff;
+}
+
+#settings{
+	margin-top:10px;
+	color: #000;
+}
+
+li{
+	padding-top:6px;
+
+}
+
+a{
+	padding-right: 10px;
+}
+
+a:focus {
+	outline:none;
+	color:#000;
+}
+
+
+
+
+
+/*left menu*/
+
+.item:hover {
+	color:#000;
+}
+
+.item {
+	font-size:16px;
+}
+
+.item_level_1 {
+	border-bottom:1px solid #000;
+	text-align:left;
+	padding:10px;
+	padding-top:13px;
+
+
+}
+
+.item_level_1:hover {
+	padding:10px;
+	border-bottom:2px solid #000;
+	color:#000;
+}
+
+
+
+.demo-card-square.mdl-card {
+  width: 200px;
+  height: 280px;
+  padding:15px;
+  border-right:1px solid #ff6d5a;
+ 
+ 
+
+}
+.demo-card-square > .mdl-card__title {
+  background:
+    url('images/sidetoplamp.png') no-repeat;
+    background-size: 180px 200px;
+}
+.demo-card-square:hover {
+	border:3px solid #FF6D5A;
+	cursor: pointer;
+}
+
+.column {
+	width:200px;
+	-webkit-transform-style: preserve-3d; /* Chrome, Safari, Opera */
+	transform-style: preserve-3d;
+}
+
+
+a {
+	text-decoration:none;
+	color:black;
+}
+
+a:hover {
+	text-decoration:none;
+	color:#7c7cff;
+}
+
+li {
+	list-style: none;
+}
+
+
+.carousel {
+	height:350px;
+
+}
+
+a:focus {
+	text-decoration: none;
+}
+
+
+.sub-sub_item.sub-sub_item_decoration {
+	color:#ff975a;
+	font-weight:bold;
+	text-decoration:none;
+	font-size:12px;
+}
+
+
+
+
+small {
+	font-size: 10px;
+}
+

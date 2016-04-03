@@ -1,0 +1,134 @@
+/*left overlap bar starts*/
+.left_overlap{
+    width:200px;
+    height:100vh;
+    background-color: #FF6D5A;
+    color:white;
+    position:fixed;
+    top:0;
+    z-index: 100;
+    left:-200px;
+    -webkit-transition: 0.5s;
+    transition:  0.5s;
+}
+.left_overlap_head_logo{
+    width: 50px;
+    height: 50px;
+    margin: 10px 0 0 0;
+}
+.left_overlap_toggle{
+    -webkit-transform: translate3d(100%,0, 0);
+    transform: translate3d(100%,0, 0);
+}
+.left_overlap_social_images img{
+    width:26px;
+    height: 26px;
+    padding:5px;
+}
+.left_overlap_pop{
+    cursor: pointer;
+    position:absolute;
+    right:-35px;
+    top:45vh;
+    text-align:right;
+    z-index: -1;
+}
+.left_overlap_pop img{
+    width:60px;
+    height:80px;
+}
+.left_overlap_pop_shadow{
+    opacity: 0.5;
+
+}
+.left_overlap_header{
+    font-weight: bold;
+    font-size: 1.3em;
+    z-index: 110;
+}
+.left_overlap_list{
+    font-weight: 700;
+    padding: 1%;
+    height:25vh;
+    margin: 1% 0 0 0;
+    color:white;
+}
+.left_overlap_list::-webkit-scrollbar-track
+{	border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+
+}
+
+.left_overlap_list::-webkit-scrollbar
+{
+    width: 4px;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+}
+
+.left_overlap_list::-webkit-scrollbar-thumb
+{	border-radius: 5px;
+    background-color: black;
+    cursor: pointer;
+    background-image: -webkit-linear-gradient(45deg,
+    rgba(255, 255, 255, .2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, .2) 50%,
+    rgba(255, 255, 255, .2) 75%,
+    transparent 75%,
+    transparent)
+}
+.left_overlap_list div{
+    padding:1%;
+    cursor:pointer;
+    margin: 1%;
+}
+.left_overlap_list div:hover{
+    text-decoration: underline;
+}
+.left_overlap_social_images{
+    position:absolute;
+    text-align: center;
+    padding:1%;
+    bottom:1vh;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* Nav-bar */
+.navbar-default{
+    background-color: #FF6D5A;
+    height: 60px;
+    border-bottom: none;
+    z-index:1000;
+    position: fixed;
+    width:100%;
+}
+
+.nav_item {
+    background-color:#FF6D5A;
+    height:48px;
+    display: inline;
+
+}
+
+.nav_item_right {
+    background-color: #FF6D5A;
+    padding:8px;
+
+    text-align: center;
+    height:48px;
+    cursor:pointer;
+
+}
+
+/* Left category col-md */
+.col-md-2 {
+    width:15%;
+    margin-top:55px;
+    height:150vh;
+    padding-top:13px;
+}

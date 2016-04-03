@@ -11,6 +11,16 @@
 |
 */
 
+/*
+ * Landing Page
+ * with full categorised product
+ *
+ */
+Route::get('/', 'LandingPageController@home');
+Route::get('home', 'LandingPageController@home');
 
-Route::get('/', 'LandingPageControlller@home');
-Route::get('home', 'LandingPageControlller@home');
+
+/*
+ * Product Page
+ */
+Route::get('product/{id}', 'ProductPageController@productView');

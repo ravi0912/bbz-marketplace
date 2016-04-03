@@ -22,12 +22,12 @@
       <data directive="@overwrite" />
       <data directive="@endforelse" />
       <data directive="@elseif" injection="true" prefix="&lt;?php elseif (" suffix="): ?&gt;" />
-      <data directive="@choice" injection="true" prefix="&lt;?php echo \Illuminate\Support\Facades\Lang::choice(" suffix="); ?&gt;" />
       <data directive="@parent" />
+      <data directive="@choice" injection="true" prefix="&lt;?php echo \Illuminate\Support\Facades\Lang::choice(" suffix="); ?&gt;" />
       <data directive="@show" />
       <data directive="@empty" />
-      <data directive="@if" injection="true" prefix="&lt;?php if (" suffix="): ?&gt;" />
       <data directive="@endunless" />
+      <data directive="@if" injection="true" prefix="&lt;?php if (" suffix="): ?&gt;" />
       <data directive="@for" injection="true" prefix="&lt;?php for (" suffix="): ?&gt;" />
       <data directive="@section" injection="true" prefix="&lt;?php $__env-&gt;startSection(" suffix="); ?&gt;" />
     </customDirectives>
