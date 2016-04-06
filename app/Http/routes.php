@@ -24,3 +24,13 @@ Route::get('home', 'LandingPageController@home');
  * Product Page
  */
 Route::get('product/{id}', 'ProductPageController@productView');
+
+/*
+ * Product according to Category
+ */
+Route::get('category/{id}', 'LandingPageController@productCategory');
+
+/*
+ * Product according to Subcategory
+ */
+Route::get('subCategory/{id}', 'LandingPageController@productSubcategory');

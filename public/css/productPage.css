@@ -93,10 +93,7 @@ a {
     color:black;
 }
 
-a:hover {
-    text-decoration:none;
-    color:#7c7cff;
-}
+
 
 li {
     list-style: none;
@@ -329,4 +326,18 @@ i {
 
 .col-md-6 {
     margin-top: 6%;
+}
+
+
+.item_level_1 {
+    border-bottom:1px solid #000;
+    text-align:left;
+    padding-top:1px;
+
+
+}
+
+.item_level_1:hover {
+    border-bottom:2px solid #000;
+    color:#000;
 }

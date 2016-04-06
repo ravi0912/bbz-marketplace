@@ -4,9 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Filter extends Model
+class DealerSpecificData extends Model
 {
-    protected $table = 'filters';
-
-
+    //
 }

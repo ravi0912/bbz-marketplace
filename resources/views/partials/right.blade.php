@@ -1,163 +1,30 @@
-<div class="col-md-6 col-md-offset-6"></div>
-<div class="col-md-4">
-    <div class="row">
-        <div class="col-md-11">
-            <div id="outer_wrapper">
-                <div id="trending_lists">
-
-                    <h6 style="color:#ff4931;font-weight:bold;margin-top:8px">TRENDING</h6>
-
-                    <div id="trending">
-                        <div class="trending_wrapper" style="border-left:2px solid #444;padding-left:5px;">
-                            <div class="trending_notifications" style="background-color:#cfcfcf">
-                                <div id="trending_image1" class="image_icon" style="background: url('images/mumbai.jpg') no-repeat;background-size:90% 90%;background-position:50% 50%">
-                                </div>
-                                <div id="trending_text1" class="trending_text">
-                                    <p class="size">Mumbai,not Bangaluru is preferred real estate in India say experts keeping in mind recent changes in Govt policies.</p>
-                                </div>
-                                <div class="bottom_ info">
-                                    <small style="float:left" class="left_bottom">Source The Fiancial Times</small>
-                                    <small style="float:right" class="right_bottom">17 min ago</small>
-                                </div>
-                            </div>
-
-                            <div class="trending_notifications" style="background-color:#e8e8e8">
-                                <div id="trending_image2" class="image_icon" style="background:url('images/underconstruction.png') no-repeat;background-size:90% 90%;background-position:50% 50%">
-                                </div>
-                                <div id="trending_text2" class="trending_text">
-                                    <p class="size">The words in bold type were those added by Regorco.</p>
-                                </div>
-                                <div class="bottom_info">
-                                    <small style="float:left" class="left_bottom">Source Civil Constructor</small>
-                                    <small style="float:right" class="right_bottom">1 hour ago</small>
-                                </div>
-                            </div>
-
-                            <div class="trending_notifications" style="background-color:#cfcfcf">
-                                <div id="trending_image1" class="image_icon" style="background: url('images/mumbai.jpg') no-repeat;background-size:90% 90%;background-position:50% 50%">
-                                </div>
-                                <div id="trending_text1" class="trending_text">
-                                    <p class="size">Mumbai,not Bangaluru is preferred real estate in India say experts keeping in mind recent changes in Govt policies.</p>
-                                </div>
-                                <div class="bottom_ info">
-                                    <small style="float:left" class="left_bottom">Source The Fiancial Times</small>
-                                    <small style="float:right" class="right_bottom">17 min ago</small>
-                                </div>
-                            </div>
-                            <div style="text-align:right"><a href="#">See All</a></div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div id="messages_lists">
-
-                    <h6 style="color:#ff4931;font-weight:bold;margin-top:8px">MESSAGES</h6>
-
-                    <div id="trending">
-                        <div class="trending_wrapper" style="border-left:2px solid #444;padding-left:5px;">
-                            <div class="trending_notifications" style="background-color:#cfcfcf">
-                                <div id="trending_image1" class="image_icon" style="background: url('images/mumbai.jpg') no-repeat;background-size:90% 90%;background-position:50% 50%">
-                                </div>
-                                <div id="trending_text1" class="trending_text">
-                                    <p class="size">Mumbai,not Bangaluru is preferred real estate in India say experts keeping in mind recent changes in Govt policies.</p>
-                                </div>
-                                <div class="bottom_ info">
-                                    <small style="float:left" class="left_bottom">Source The Fiancial Times</small>
-                                    <small style="float:right" class="right_bottom">17 min ago</small>
-                                </div>
-                            </div>
-
-                            <div class="trending_notifications" style="background-color:#e8e8e8">
-                                <div id="trending_image2" class="image_icon" style="background:url('images/underconstruction.png') no-repeat;background-size:90% 90%;background-position:50% 50%">
-                                </div>
-                                <div id="trending_text2" class="trending_text">
-                                    <p class="size">The words in bold type were those added by Regorco.</p>
-                                </div>
-                                <div class="bottom_info">
-                                    <small style="float:left" class="left_bottom">Source Civil Constructor</small>
-                                    <small style="float:right" class="right_bottom">1 hour ago</small>
-                                </div>
-                            </div>
-
-                            <div class="trending_notifications" style="background-color:#cfcfcf">
-                                <div id="trending_image1" class="image_icon" style="background: url('images/mumbai.jpg') no-repeat;background-size:90% 90%;background-position:50% 50%">
-                                </div>
-                                <div id="trending_text1" class="trending_text">
-                                    <p class="size">Mumbai,not Bangaluru is preferred real estate in India say experts keeping in mind recent changes in Govt policies.</p>
-                                </div>
-                                <div class="bottom_ info">
-                                    <small style="float:left" class="left_bottom">Source The Fiancial Times</small>
-                                    <small style="float:right" class="right_bottom">17 min ago</small>
-                                </div>
-                            </div>
-                            <div style="text-align:right"><a href="#">See All</a></div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div id="notification_lists">
-
-                    <h6 style="color:#ff4931;font-weight:bold;margin-top:8px">NOTIFICATIONS</h6>
-
-                    <div id="trending">
-                        <div class="trending_wrapper" style="border-left:2px solid #444;padding-left:5px;">
-                            <div class="trending_notifications" style="background-color:#cfcfcf">
-                                <div id="trending_image1" class="image_icon" style="background: url('images/mumbai.jpg') no-repeat;background-size:90% 90%;background-position:50% 50%">
-                                </div>
-                                <div id="trending_text1" class="trending_text">
-                                    <p class="size">Mumbai,not Bangaluru is preferred real estate in India say experts keeping in mind recent changes in Govt policies.</p>
-                                </div>
-                                <div class="bottom_ info">
-                                    <small style="float:left" class="left_bottom">Source The Fiancial Times</small>
-                                    <small style="float:right" class="right_bottom">17 min ago</small>
-                                </div>
-                            </div>
-
-                            <div class="trending_notifications" style="background-color:#e8e8e8">
-                                <div id="trending_image2" class="image_icon" style="background:url('images/underconstruction.png') no-repeat;background-size:90% 90%;background-position:50% 50%">
-                                </div>
-                                <div id="trending_text2" class="trending_text">
-                                    <p class="size">The words in bold type were those added by Regorco.</p>
-                                </div>
-                                <div class="bottom_info">
-                                    <small style="float:left" class="left_bottom">Source Civil Constructor</small>
-                                    <small style="float:right" class="right_bottom">1 hour ago</small>
-                                </div>
-                            </div>
-
-                            <div class="trending_notifications" style="background-color:#cfcfcf">
-                                <div id="trending_image1" class="image_icon" style="background: url('images/mumbai.jpg') no-repeat;background-size:90% 90%;background-position:50% 50%">
-                                </div>
-                                <div id="trending_text1" class="trending_text">
-                                    <p class="size">Mumbai,not Bangaluru is preferred real estate in India say experts keeping in mind recent changes in Govt policies.</p>
-                                </div>
-                                <div class="bottom_ info">
-                                    <small style="float:left" class="left_bottom">Source The Fiancial Times</small>
-                                    <small style="float:right" class="right_bottom">17 min ago</small>
-                                </div>
-                            </div>
-                            <div style="text-align:right"><a href="#">See All</a></div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
+<div id = "right" class = "right">
+    <div id = "right_nav" class = "right_nav">
+        <div  onmousedown = "load_right_ul_li_1(event);" class = "right_nav_active"><img onload="onLoadNotifications(); onLoadPeopleYouMayKnow();" id = "right_nav_1" src = "{{ URL::asset('images/logo/right/SVG/notification_off.svg') }}"></div>
+        <div onmousedown = "load_right_ul_li_2(event);"><a  ><img id = "right_nav_2" src = "{{ URL::asset('images/logo/right/SVG/message_off.svg') }}"></a>
+            <!--<span class="badge badge-notify">3</span>--></div>
+        <div onmousedown = "load_right_ul_li_3(event);"><img id = "right_nav_3" src = "{{ URL::asset('images/logo/right/SVG/request_off.svg') }}"></div>
+    </div>
+    <div id = "right_ul" class = "right_ul">
+        <div class = "right_ul_li">
+            {{--<div id = "notification" class = "notification">--}}{{--
+            --}}{{--<div id = "notification_header" class = "notification_header" >NOTIFICATION</div>--}}{{--
+            --}}{{--<div id = "notification_content" class = "notification_content">--}}{{--
+            --}}{{--<div id = "notification_content_1" class = "notification_content_1">--}}{{--
+            --}}{{--heading--}}{{--
+            --}}{{--</div>--}}{{--
+            --}}{{--<div id = "notification_content_2" class = "notification_content_2">--}}{{--
+            --}}{{--content--}}{{--
+            --}}{{--</div>--}}{{--
+            --}}{{--<div id = "notification_content_3" class = "notification_content_3">--}}{{--
+            --}}{{--time--}}{{--
+            --}}{{--</div>--}}{{--
+            --}}{{--</div>--}}{{--
+            --}}{{--</div>--}}{{--
+            --}}{{--<div id = "notification_more" class = "notification_more">more</div>--}}
         </div>
-        <div class="col-md-1" style="margin-top:50px;margin-right:0px">
 
-            <div class="linking_icons">
-                <div id="border_bottom1" style="cursor:pointer"><i class="material-icons side_icon">priority_high</i></div>
-            </div>
-            <div class="linking_icons" class="border_bottom">
-                <div id="border_bottom2" style="cursor:pointer"><i class="material-icons side_icon">message</i></div>
-            </div>
-            <div class="linking_icons">
-                <div id="border_bottom3" style="cursor:pointer"><i class="material-icons side_icon">laptop_mac</i></div>
-            </div>
 
-        </div>
+
     </div>
 </div>

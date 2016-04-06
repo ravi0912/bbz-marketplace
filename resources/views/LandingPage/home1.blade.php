@@ -16,7 +16,6 @@
             <div class="row">
                 <div class="col-md-8">
 
-                    <h6 style="color:#ff4931;font-weight:bold;font-size:20px;margin-top:8px">CATALOG</h6>
                     <hr>
                     <!-- carousel-->
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -81,23 +80,25 @@
                         <div class="row" style="margin-top:40px">
                             <h6 style="margin-left:20px;color:#000;font-weight:bold;font-size:20px;margin-top:8px">{{ $category->name }}</h6>
                             @foreach($products[$category->id] as $product)
-                                <div class="col-md-3 column">
-                                    <div id="wrapper" style="background-color: #939393">
-                                        <div class="demo-card-square mdl-card">
-                                            <div class="mdl-card__title mdl-card--expand">
-                                                <img src="{{ URL::asset('images/img-thing.jpg') }}" alt="">
-                                            </div>
-                                            <div class="mdl-card__actions">
-                                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                                    {{ $product->name }}
-                                                </a>
-                                            </div>
-                                            <div class="mdl-card__supporting-text">
-                                                Rs.399/-
+                                <a href="{{ url('product/'.$product->id)  }}">
+                                    <div class="col-md-3 column">
+                                        <div id="wrapper" style="background-color: #939393">
+                                            <div class="demo-card-square mdl-card">
+                                                <div class="mdl-card__title mdl-card--expand">
+                                                    <img src="{{ URL::asset('images/img-thing.jpg') }}" alt="">
+                                                </div>
+                                                <div class="mdl-card__actions">
+                                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                                        {{ $product->name }}
+                                                    </a>
+                                                </div>
+                                                <div class="mdl-card__supporting-text">
+                                                    Rs.399/-
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             @endforeach
 
                         </div>

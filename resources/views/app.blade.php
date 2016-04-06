@@ -62,6 +62,7 @@
 
 
 
+
 </head>
 <body style="font-family:Raleway" style="position:relative">
 @include ('partials.nav')
@@ -69,7 +70,7 @@
 
 @yield('content')
 
-
+@include ('partials.right')
 
 
 

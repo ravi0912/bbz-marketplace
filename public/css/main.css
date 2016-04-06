@@ -132,3 +132,65 @@
     height:150vh;
     padding-top:13px;
 }
+
+/*main body => notification  bar starts*/
+/*right bar starts*/
+.right{
+    z-index: 85;
+    border-top:1px solid #f1f1f1 ;
+    background: white;
+    position:fixed;
+    top:60px;
+    right:0;
+    height: 100%;
+}
+.right_nav{
+    text-align: align;
+    height: 100%;
+    background-color: #d6e9f7;
+}
+.right_nav div{
+    cursor: pointer;
+    text-align: align;
+    border-bottom: 1px solid #F9F9F9;
+    padding:10px;
+}
+.right_nav img{
+    width:30px;
+    height:30px;
+}
+.right_ul{
+    position:absolute;
+    top:0;
+    left:-311px;
+    width: 311px;
+    height: 100%;
+    background-color: #e5f2f8;
+
+}
+.right_ul_li{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #FF6D5A;
+    height: 350px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.right_ul_content:nth-child(odd) {
+    background: #f5f5f5;
+}
+.right_ul_content:nth-child(even) {
+    background: #f9f9f9;
+}
+.right_ul_content{
+    height:280px;
+    background: white;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 281px;
+    margin-left: 15px;
+    padding:10px;
+    margin-top:10px;
+}

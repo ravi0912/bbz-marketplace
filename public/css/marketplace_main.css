@@ -130,14 +130,12 @@ a:focus {
 .item_level_1 {
 	border-bottom:1px solid #000;
 	text-align:left;
-	padding:10px;
-	padding-top:13px;
+	padding-top:1px;
 
 
 }
 
 .item_level_1:hover {
-	padding:10px;
 	border-bottom:2px solid #000;
 	color:#000;
 }

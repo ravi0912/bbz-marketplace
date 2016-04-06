@@ -14,12 +14,14 @@ class SubCategory extends Model
     }
     public function filters()
     {
-        return $this->hasMany('App\Filter');
+        return $this->hasMany('App\Filter','filter_id');
     }
     public function brand()
     {
         return $this->hasMany('App\Filter')->where('name', 'Brand');
     }
+
+
 
     public function category(){
         return $this->belongsTo('App\Category','category_id');
