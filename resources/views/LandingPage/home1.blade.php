@@ -76,6 +76,7 @@
 
                     <!--mdl card-->
                     {{--Showing 5 random products according to category--}}
+                    {{--Showing product Category --}}
                     @foreach($categories as $category)
                         <div class="row" style="margin-top:40px">
                             <h6 style="margin-left:20px;color:#000;font-weight:bold;font-size:20px;margin-top:8px">{{ $category->name }}</h6>
@@ -100,7 +101,7 @@
                                     </div>
                                 </a>
                             @endforeach
-
+                        {{--END OF SHowing product  --}}
                         </div>
                     @endforeach
                     </div>
