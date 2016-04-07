@@ -56,7 +56,7 @@ class LandingPageController extends Controller
         $subcategory = SubCategory::get();
         $subcategoryName = SubCategory::whereId($id)->first();
         $categoryName = Category::whereId($subcategoryName->id)->first();
-        $products = Product::where('sub_category_id',$id)->get();
+        $products = Product::where('sub_category_id',$id)->paginate(30);
 
 
         return view('LandingPage.productSubcategory',['categories' => $category,'subcategories' => $subcategory,'products' => $products,'subcategoryName' => $subcategoryName,'categoryName' => $categoryName]);

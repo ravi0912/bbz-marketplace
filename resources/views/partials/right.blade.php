@@ -1,6 +1,6 @@
 <div id = "right" class = "right">
     <div id = "right_nav" class = "right_nav">
-        <div  onmousedown = "load_right_ul_li_1(event);" class = "right_nav_active"><img onload="onLoadNotifications(); onLoadPeopleYouMayKnow();" id = "right_nav_1" src = "{{ URL::asset('images/logo/right/SVG/notification_off.svg') }}"></div>
+        <div  onmousedown = "load_right_ul_li_1(event);" class = "right_nav_active"><img  id = "right_nav_1" src = "{{ URL::asset('images/logo/right/SVG/notification_off.svg') }}"></div>
         <div onmousedown = "load_right_ul_li_2(event);"><a  ><img id = "right_nav_2" src = "{{ URL::asset('images/logo/right/SVG/message_off.svg') }}"></a>
             <!--<span class="badge badge-notify">3</span>--></div>
         <div onmousedown = "load_right_ul_li_3(event);"><img id = "right_nav_3" src = "{{ URL::asset('images/logo/right/SVG/request_off.svg') }}"></div>
@@ -28,3 +28,13 @@
 
     </div>
 </div>
+
+<script>
+    function load_right_ul_li_1(e){
+        if (e.which == 1) {
+            $(".right_ul").show();
+        }
+    }
+
+
+</script>

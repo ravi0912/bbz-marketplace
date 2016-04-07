@@ -115,6 +115,20 @@ $(document).ready(function(){
 	$(".item_level_1").click(function(){
 		$(this).toggleClass("open");
 	});
+
+	$(document).mouseup(function (e)
+	{
+		var container = $(".right_ul");
+		var container1 = $(".right_nav_active")
+
+		if ((!container.is(e.target) // if the target of the click isn't the container...
+			&& container.has(e.target).length === 0) && (!container1.is(e.target) && container1.has(e.target).length === 0)) // ... nor a descendant of the container
+		{
+			$(".right_ul").hide();
+		}
+	});
+	//hiding right notification box
+	$(".right_ul").hide();
 	$(".menu_toggle").on('click',function(){
 		$(".pushmenu").toggleClass('open_menu');
 		$(".menu_toggle").toggleClass('move');
