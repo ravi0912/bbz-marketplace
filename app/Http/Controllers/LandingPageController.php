@@ -21,7 +21,7 @@ class LandingPageController extends Controller
         $category_count = Category::count();
         $subcategory = SubCategory::get();
         for($i=1;$i<=$category_count;$i++){
-           $products[$i] =  Product::where('category_id',$i)->orderByRaw("RAND()")->groupby('name')->take(5)->get();
+           $products[$i] =  Product::where('category_id',$i)->groupby('name')->take(5)->get();
         }
         //return $products;
         return view('LandingPage.home1',['categories' => $category,'subcategories' => $subcategory,'products' => $products]);

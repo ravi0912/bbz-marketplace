@@ -1,4 +1,4 @@
-<div class="col-md-2" style="background-color:#ebecee">
+<div class="col-md-2" style="background-color:#fff">
     <!--left static sidebar-->
     <div class="left" id="left">
         <ul style="width:200px;margin-left: -30px;">

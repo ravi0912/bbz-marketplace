@@ -98,6 +98,11 @@
     margin-right:auto;
 }
 
+a:hover {
+    text-decoration:none;
+    color:#000;
+}
+
 /* Nav-bar */
 .navbar-default{
     background-color: #FF6D5A;
@@ -129,7 +134,7 @@
 .col-md-2 {
     width:15%;
     margin-top:55px;
-    height:150vh;
+    height:100%;
     padding-top:13px;
 }
 

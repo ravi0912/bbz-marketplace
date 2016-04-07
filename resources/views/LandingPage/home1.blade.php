@@ -16,7 +16,7 @@
             <div class="row">
                 <div class="col-md-8">
 
-                    <hr>
+                    <br>
                     <!-- carousel-->
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
                         <!--carousel indicators-->
@@ -57,12 +57,14 @@
                         </a>
                         <a href="#myCarousel" class="right carousel-control" role="button" data-slide="next">
                             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">previous</span>
+                            <span class="sr-only">next</span>
                         </a>
                     </div>
+
                     <br>
 
                 </div>
+
 
                 <div class="col-md-4"></div>
 
@@ -79,30 +81,39 @@
                     {{--Showing product Category --}}
                     @foreach($categories as $category)
                         <div class="row" style="margin-top:40px">
-                            <h6 style="margin-left:20px;color:#000;font-weight:bold;font-size:20px;margin-top:8px">{{ $category->name }}</h6>
+                            <h6 style="margin-left:20px;color:#000;font-weight:bold;font-size:20px;margin-top:8px;font-family:Courier New">{{ $category->name }} <small><a href="#" style="color:#FF6D5A" class="view_more">View More</a></small></h6>
                             @foreach($products[$category->id] as $product)
                                 <a href="{{ url('product/'.$product->id)  }}">
                                     <div class="col-md-3 column">
-                                        <div id="wrapper" style="background-color: #939393">
-                                            <div class="demo-card-square mdl-card">
+                                        <div id="wrapper" style="background-color: #fff;height:290px;width:190px">
+                                            <div class="product_image">
+                                                <img src="{{ URL::asset('images/img-thing.jpg') }}" alt="" height="160" width="170">
+                                            </div>
+                                            <div class="product_description">
+                                                <hr>
+                                                <a style="font-size:13px;font-family:Arial">
+                                                    {{ $product->name }}
+                                                </a>
+                                            </div>
+
+                                            {{--<div class="demo-card-square mdl-card">
                                                 <div class="mdl-card__title mdl-card--expand">
-                                                    <img src="{{ URL::asset('images/img-thing.jpg') }}" alt="">
+                                                   <img src="{{ URL::asset('images/img-thing.jpg') }}" alt="" height="150" width="180">
                                                 </div>
                                                 <div class="mdl-card__actions">
                                                     <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
                                                         {{ $product->name }}
                                                     </a>
                                                 </div>
-                                                <div class="mdl-card__supporting-text">
-                                                    Rs.399/-
-                                                </div>
-                                            </div>
+
+                                            </div>--}}
                                         </div>
                                     </div>
                                 </a>
                             @endforeach
                         {{--END OF SHowing product  --}}
                         </div>
+                        <hr style="background-color: #0a568c">
                     @endforeach
                     </div>
                 </div>

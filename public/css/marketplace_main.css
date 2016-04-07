@@ -119,47 +119,73 @@ a:focus {
 
 /*left menu*/
 
-.item:hover {
-	color:#000;
-}
 
 .item {
-	font-size:16px;
+	font-size:14px;
+	padding-top:5px;
+	font-family:Courier New;
+
 }
 
 .item_level_1 {
-	border-bottom:1px solid #000;
+	border-bottom:1px solid #858585;
 	text-align:left;
-	padding-top:1px;
+	padding-top:10.4px;
 
 
 }
 
 .item_level_1:hover {
 	border-bottom:2px solid #000;
-	color:#000;
+
 }
 
+.collapsible-inner_header {
+	color:#474747;
+}
 
+#wrapper {
+	border:1px solid #a1a1a1;
+	border-radius:10px;
+
+}
+
+#wrapper:hover {
+	-webkit-box-shadow: 0 0 5px blue;
+	box-shadow: 0 0 5px blue;
+}
+
+.product_image {
+	height:60%;
+	width:100%;
+	padding:10px;
+
+}
+
+.product_description {
+	margin-top:-20px;
+	height:40%;
+	width:100%;
+	padding:10px;
+
+}
 
 .demo-card-square.mdl-card {
   width: 200px;
   height: 280px;
-  padding:15px;
+
   border-right:1px solid #ff6d5a;
  
  
 
 }
-.demo-card-square > .mdl-card__title {
-  background:
-    url('images/sidetoplamp.png') no-repeat;
-    background-size: 180px 200px;
-}
+
 .demo-card-square:hover {
 	border:3px solid #FF6D5A;
 	cursor: pointer;
 }
+
+
 
 .column {
 	width:200px;
@@ -173,10 +199,7 @@ a {
 	color:black;
 }
 
-a:hover {
-	text-decoration:none;
-	color:#7c7cff;
-}
+
 
 li {
 	list-style: none;
@@ -185,6 +208,8 @@ li {
 
 .carousel {
 	height:350px;
+
+
 
 }
 
