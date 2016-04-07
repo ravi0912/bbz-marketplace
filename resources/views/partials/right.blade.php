@@ -1,4 +1,4 @@
-<div id = "right" class = "right">
+<div id = "right" class = "right_notification">
     <div id = "right_nav" class = "right_nav">
         <div  onmousedown = "load_right_ul_li_1(event);" class = "right_nav_active"><img  id = "right_nav_1" src = "{{ URL::asset('images/logo/right/SVG/notification_off.svg') }}"></div>
         <div onmousedown = "load_right_ul_li_2(event);"><a  ><img id = "right_nav_2" src = "{{ URL::asset('images/logo/right/SVG/message_off.svg') }}"></a>

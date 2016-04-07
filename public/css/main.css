@@ -140,7 +140,7 @@ a:hover {
 
 /*main body => notification  bar starts*/
 /*right bar starts*/
-.right{
+.right_notification{
     z-index: 85;
     border-top:1px solid #f1f1f1 ;
     background: white;
