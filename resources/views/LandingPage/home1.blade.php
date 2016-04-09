@@ -77,22 +77,32 @@
                 <div class="col-md-12" style="margin-top:-40px">
 
                     <!--mdl card-->
+
                     {{--Showing 5 random products according to category--}}
                     {{--Showing product Category --}}
                     @foreach($categories as $category)
                         <div class="row" style="margin-top:40px">
-                            <h6 style="margin-left:20px;color:#000;font-weight:bold;font-size:20px;margin-top:8px;font-family:Courier New">{{ $category->name }} <small><a href="#" style="color:#FF6D5A" class="view_more">View More</a></small></h6>
+                            <h6 style="margin-left:20px;color:#000;font-weight:bold;font-size:20px;margin-top:8px;font-family:Courier New">{{ $category->name }} <small><a href="{{ url('category/'.$category->id) }}" style="color:#FF6D5A" class="view_more">View More</a></small></h6>
                             @foreach($products[$category->id] as $product)
                                 <a href="{{ url('product/'.$product->id)  }}">
                                     <div class="col-md-3 column">
                                         <div id="wrapper" style="background-color: #fff;height:290px;width:190px">
                                             <div class="product_image">
-                                                <img src="{{ URL::asset('images/img-thing.jpg') }}" alt="" height="160" width="170">
+                                                @if(isset($product->thumbnailImage->image_url))
+                                                    <img src="{{ URL::asset("product/".$product->thumbnailImage->image_url) }}" alt="" height="160" width="170">
+                                                @else
+                                                    <img src="{{ URL::asset("images/no-image-box.png") }}" alt="" height="160" width="170">
+                                                @endif
                                             </div>
                                             <div class="product_description">
                                                 <hr>
                                                 <a style="font-size:13px;font-family:Arial">
-                                                    {{ $product->name }}
+                                                    @foreach($product->filters as $filter)
+                                                        @if($filter->filterName->name == "Brand")
+                                                            <span> <strong>{{ $filter->data }}  </strong></span>
+                                                        @endif
+                                                    @endforeach
+                                                    {{ $product->name }}{{$product->id}}
                                                 </a>
                                             </div>
 

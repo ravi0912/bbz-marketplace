@@ -16,7 +16,7 @@
                 <div class="row">
                     <div class="col-md-8">
                         <br>
-                        <h6 style="color:#6262ff;font-weight:bold;margin-top:-12px;">{{ $categoryName->name }} > {{ $subcategoryName->name }}</h6>
+                        <h6 style="color:#6262ff;font-weight:bold;margin-top:-12px;"><a href="{{ url('category/'.$categoryName->id) }}">{{ $categoryName->name }}</a> > <a href="{{ url('subCategory/'.$subcategoryName->id) }}">{{ $subcategoryName->name }}</a></h6>
                         <hr>
                         <!-- carousel-->
                         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -82,24 +82,46 @@
                             @foreach($products as $product)
                                 <a href="{{ url('product/'.$product->id)  }}">
                                     <div class="col-md-3 column">
-                                        <div id="wrapper" style="background-color: #939393">
-                                            <div class="demo-card-square mdl-card">
-                                                <div class="mdl-card__title mdl-card--expand">
-                                                    <img src="{{ URL::asset('images/img-thing.jpg') }}" alt="">
-                                                </div>
-                                                <div class="mdl-card__actions">
-                                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                                        {{ $product->name }}
-                                                    </a>
-                                                </div>
-                                                <div class="mdl-card__supporting-text">
-                                                    Rs.399/-
-                                                </div>
+                                        <div id="wrapper" style="background-color: #fff;height:290px;width:190px">
+                                            <div class="product_image">
+                                                @if(isset($product->thumbnailImage->image_url))
+                                                    <img src="{{ URL::asset("product/".$product->thumbnailImage->image_url) }}" alt="" height="160" width="170">
+                                                @else
+                                                    <img src="{{ URL::asset("images/no-image-box.png") }}" alt="" height="160" width="170">
+                                                @endif
                                             </div>
+                                            <div class="product_description">
+                                                <hr>
+                                                <a style="font-size:13px;font-family:Arial">
+                                                    @foreach($product->filters as $filter)
+                                                        @if($filter->filterName->name == "Brand")
+                                                            <span> <strong>{{ $filter->data }}  </strong></span>
+                                                        @endif
+                                                    @endforeach
+                                                    {{ $product->name }}
+                                                </a>
+                                            </div>
+                                            {{--<div id="wrapper" style="background-color: #939393">
+                                                <div class="demo-card-square mdl-card">
+                                                    <div class="mdl-card__title mdl-card--expand">
+                                                        <img src="{{ URL::asset('images/img-thing.jpg') }}" alt="">
+                                                    </div>
+                                                    <div class="mdl-card__actions">
+                                                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                                            {{ $product->name }}
+                                                        </a>
+                                                    </div>
+                                                    <div class="mdl-card__supporting-text">
+                                                        Rs.399/-
+                                                    </div>
+                                                </div>--}}
                                         </div>
                                     </div>
                                 </a>
                             @endforeach
+                            @if($productsCount == 0)
+                                Sorry, No product available.
+                            @endif
                         </div>
 
                     </div>

@@ -4,7 +4,7 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a href="#" class="navbar-brand"><img src="http://buildblockz.com/images/logo/BBZlogo/bbzlogo_white.svg" alt="0" height="50" width="50" style="margin-top: -15px"/></a>
+                <a href="{{ url('/') }}" class="navbar-brand"><img src="http://buildblockz.com/images/logo/BBZlogo/bbzlogo_white.svg" alt="0" height="50" width="50" style="margin-top: -15px"/></a>
             </div>
             <ul class="nav navbar-nav navbar-right">
                 <li class="nav_item">

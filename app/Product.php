@@ -23,4 +23,14 @@ class Product extends Model
         return $this->hasMany('App\FilterData');
     }
 
+    public function descriptions()
+    {
+        return $this->hasMany('App\DescriptionData');
+    }
+
+    public function thumbnailImage()
+    {
+        return $this->hasOne('App\ThumbnailImage');
+    }
+
 }

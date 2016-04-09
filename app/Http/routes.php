@@ -34,3 +34,10 @@ Route::get('category/{id}', 'LandingPageController@productCategory');
  * Product according to Subcategory
  */
 Route::get('subCategory/{id}', 'LandingPageController@productSubcategory');
+
+/*
+ * Selecting thumbnail image for product
+ */
+Route::get('selectProduct', 'LandingPageController@selectProduct');
+Route::get('selectProductImage/{id}', 'LandingPageController@selectProductImage');
+Route::get('selectedImage', 'LandingPageController@selectedImage');

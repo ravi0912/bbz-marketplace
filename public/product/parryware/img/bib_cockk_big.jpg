@@ -1,0 +1,797 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>404-Content not found </title>
+<link href="http://www.parryware.in/css/style.css" rel="stylesheet" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="http://www.parryware.in/css/screen.css" rel="stylesheet" type="text/css" />
+<link href="http://www.parryware.in/css/jquery.bxslider.css" rel="stylesheet" type="text/css" />
+<link href="http://www.parryware.in/css/fonts.css" rel="stylesheet" type="text/css" />
+<!-- google analytics code -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-31780430-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body class="productBodyBg">
+<section class="bathroomWallHead">
+  <div class="headingSec">
+    <div class="wrapper">
+      <h2>404!</h2>
+    </div>
+  </div>
+
+	<header class="tabMob">
+    <h1 class="logoMobile"><a href="index.php"><img src="images/logo_tab_mobile.png" width="126" height="30" alt=""></a></h1>
+    <nav class="mainNav"> <a href="javascript:void(0);" class="mobile-menu sprite"></a>
+      <ul class="mobile-show">
+        <li><a href="index.php">Home</a></li>
+        <li><a href="about_us.php?id=1">About us</a></li>
+        <li><a href="bathroom.php">Products</a></li>
+        <!--<li><a href="what_new.php?cat=1&sub_cat=1">Whats New</a></li>-->
+        <li><a href="news_events.php">Media</a></li>
+        <li><a href="catalogues.php">Catalogues</a></li>
+        <li><a href="quality_certification.php">Resources</a></li>
+        <li><a href="locate_us.php">Locate Us</a></li>
+        <li><a href="contact_us.php">Contact Us</a></li>
+        <li class="quickLinks sprite"><a href="javascript:void(0)">Quick Links</a></li>
+      </ul>
+    </nav>
+</header>  	<section class="homNavR_sec">
+    <div class="enquiryNow">Enquire Now <strong>1800-274-6060</strong></div>
+    <h1 class="logo"><a href="index.php"><img src="images/logo.png" alt=""></a></h1>
+    <div class="navRight">
+      <ul>
+                    <li class="sanitaryware">
+                                <a href="http://www.parryware.in/category_details.php?cat=1">
+                                <span>Sanitaryware</span></a>
+                <ul class="inner_nav">
+                                        <li>
+                                                <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=1">
+                                                <span>Closets</span></a>
+                      <ul class="inner_nav">
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=1&other=1">
+                                                        Single Piece Suite</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=1&other=2">
+                                                        Floor Mounted Coupled</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=1&other=3">
+                                                        Wall Hung With Cistern</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=1&other=5">
+                                                        Squatting Pans</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=1&other=6">
+                                                        European Water Closets</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=1&other=97">
+                                                        Wall Hung</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=1&other=98">
+                                                        Siyahi</a></li>
+                         
+                      </ul>
+                    </li>
+                                        <li>
+                                                <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=2">
+                                                <span>Basins</span></a>
+                      <ul class="inner_nav">
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=2&other=7">
+                                                        Basins with Pedestals</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=2&other=8">
+                                                        Counter Top Basin</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=2&other=9">
+                                                        Below Counter Basin</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=2&other=10">
+                                                        Bowl Basins</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=2&other=11">
+                                                        Semi Recessed Basin</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=2&other=12">
+                                                        Wall Hung Basins</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=2&other=13">
+                                                        Corner Basin</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=2&other=88">
+                                                        Pedestal</a></li>
+                         
+                      </ul>
+                    </li>
+                                        <li>
+                                                <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=3">
+                                                <span>Coventina</span></a>
+                      <ul class="inner_nav">
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=3&other=14">
+                                                        Coventina</a></li>
+                         
+                      </ul>
+                    </li>
+                                        <li>
+                                                <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=4">
+                                                <span>Urinals</span></a>
+                      <ul class="inner_nav">
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=4&other=15">
+                                                        Urinals</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=4&other=16">
+                                                        Electronic Urinal</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=4&other=17">
+                                                        EFS</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=4&other=51">
+                                                        Waterless Urinal</a></li>
+                         
+                      </ul>
+                    </li>
+                                        <li>
+                                                <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=5">
+                                                <span>Partition</span></a>
+                      <ul class="inner_nav">
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=5&other=18">
+                                                        Partition</a></li>
+                         
+                      </ul>
+                    </li>
+                                        <li>
+                                                <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=6">
+                                                <span>Traps</span></a>
+                      <ul class="inner_nav">
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=6&other=19">
+                                                        Traps</a></li>
+                         
+                      </ul>
+                    </li>
+                                        <li>
+                                                <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=8">
+                                                <span>Llc & lab sink</span></a>
+                      <ul class="inner_nav">
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=8&other=21">
+                                                        LLC & Lab Sink </a></li>
+                         
+                      </ul>
+                    </li>
+                                        <li>
+                                                <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=29">
+                                                <span>Seat covers</span></a>
+                      <ul class="inner_nav">
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=29&other=90">
+                                                        Seat Covers</a></li>
+                         
+                      </ul>
+                    </li>
+                                        <li>
+                                                <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=30">
+                                                <span>Cistern</span></a>
+                      <ul class="inner_nav">
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=30&other=91">
+                                                        Plastic</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=30&other=92">
+                                                        Concealed</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=30&other=93">
+                                                        Linea-N Wall Plates</a></li>
+                         
+                      </ul>
+                    </li>
+                     
+                </ul>
+               
+            </li>
+                    <li class="sanitaryware">
+                            	<a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=9">
+            	                <span>Faucets</span></a>
+                <ul class="inner_nav">
+                                        <li>
+                                                <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=9">
+                                                <span>Sensor taps</span></a>
+                      <ul class="inner_nav">
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=9&other=22">
+                                                        E Taps</a></li>
+                         
+                      </ul>
+                    </li>
+                                        <li>
+                                                <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=10">
+                                                <span>Smart</span></a>
+                      <ul class="inner_nav">
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=10&other=23">
+                                                        Smart</a></li>
+                         
+                      </ul>
+                    </li>
+                                        <li>
+                                                <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=11">
+                                                <span>Single lever</span></a>
+                      <ul class="inner_nav">
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=11&other=24">
+                                                        Zen X</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=11&other=25">
+                                                        Spark</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=11&other=26">
+                                                        Euclid</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=11&other=27">
+                                                        Crust</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=11&other=28">
+                                                        Marvel - Bathroom in a box</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=11&other=29">
+                                                        Dazzle</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=11&other=30">
+                                                        Verve</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=11&other=31">
+                                                        Galaxy</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=11&other=32">
+                                                        Marvel II - Bathroom in a Box</a></li>
+                         
+                      </ul>
+                    </li>
+                                        <li>
+                                                <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=12">
+                                                <span>Quarter turn</span></a>
+                      <ul class="inner_nav">
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=12&other=33">
+                                                        Agate</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=12&other=34">
+                                                        Diamond</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=12&other=35">
+                                                        New Ruby</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=12&other=36">
+                                                        Sapphire</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=12&other=37">
+                                                        Trio</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=12&other=38">
+                                                        Dice Collection</a></li>
+                         
+                      </ul>
+                    </li>
+                                        <li>
+                                                <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=13">
+                                                <span>Half turn</span></a>
+                      <ul class="inner_nav">
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=13&other=39">
+                                                        Coral</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=13&other=40">
+                                                        Pearl</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=13&other=41">
+                                                        Jade</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=13&other=43">
+                                                        Pebble</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=13&other=76">
+                                                        Amber</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=13&other=79">
+                                                        Wall Spouts</a></li>
+                         
+                      </ul>
+                    </li>
+                                        <li>
+                                                <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=14">
+                                                <span>Fittings</span></a>
+                      <ul class="inner_nav">
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=14&other=65">
+                                                        Overhead Showers</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=14&other=66">
+                                                        Hand Showers</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=14&other=67">
+                                                        Shower Arm</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=14&other=68">
+                                                        Health Faucets</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=14&other=69">
+                                                        Angle Valve</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=14&other=70">
+                                                        Waste Coupling</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=14&other=71">
+                                                        Flush Valve</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=14&other=72">
+                                                        Bottle Trap</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=14&other=73">
+                                                        Rain Showers</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=14&other=74">
+                                                        Sliding Kit</a></li>
+                         
+                      </ul>
+                    </li>
+                                        <li>
+                                                <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=15">
+                                                <span>Accessories</span></a>
+                      <ul class="inner_nav">
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=15&other=75">
+                                                        Push Taps</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=15&other=80">
+                                                        Apus</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=15&other=82">
+                                                        Omega</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=15&other=83">
+                                                        Standard</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=15&other=84">
+                                                        Coral - Value Pack </a></li>
+                         
+                      </ul>
+                    </li>
+                     
+                </ul>
+               
+            </li>
+                    <li class="sanitaryware">
+                                <a href="http://www.parryware.in/category_details.php?cat=3">
+                                <span>Wellness</span></a>
+                <ul class="inner_nav">
+                                        <li>
+                                                <a href="http://www.parryware.in/category_details.php?cat=3&sub_cat=16">
+                                                <span>Shower panels</span></a>
+                      <ul class="inner_nav">
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=3&sub_cat=16&other=44">
+                                                        Shower Panels</a></li>
+                         
+                      </ul>
+                    </li>
+                                        <li>
+                                                <a href="http://www.parryware.in/category_details.php?cat=3&sub_cat=17">
+                                                <span>Shower enclosures</span></a>
+                      <ul class="inner_nav">
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=3&sub_cat=17&other=45">
+                                                        Shower Enclosures</a></li>
+                         
+                      </ul>
+                    </li>
+                                        <li>
+                                                <a href="http://www.parryware.in/category_details.php?cat=3&sub_cat=18">
+                                                <span>Whirlpools & bathtubs</span></a>
+                      <ul class="inner_nav">
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=3&sub_cat=18&other=85">
+                                                        Acrylic</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=3&sub_cat=18&other=86">
+                                                        Ceramic Steel</a></li>
+                         
+                      </ul>
+                    </li>
+                     
+                </ul>
+               
+            </li>
+                    <li class="sanitaryware">
+                                <a href="http://www.parryware.in/category_details.php?cat=4">
+                                <span>Allied products</span></a>
+                <ul class="inner_nav">
+                                        <li>
+                                                <a href="http://www.parryware.in/category_details.php?cat=4&sub_cat=23">
+                                                <span>Kitchen sinks</span></a>
+                      <ul class="inner_nav">
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=4&sub_cat=23&other=55">
+                                                        New Coral: Premium Range Esqua Range</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=4&sub_cat=23&other=56">
+                                                        New Coral</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=4&sub_cat=23&other=57">
+                                                        Classic Range</a></li>
+                         
+                      </ul>
+                    </li>
+                                        <li>
+                                                <a href="http://www.parryware.in/category_details.php?cat=4&sub_cat=24">
+                                                <span>Pressure boosters</span></a>
+                      <ul class="inner_nav">
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=4&sub_cat=24&other=58">
+                                                        Pressure Booster</a></li>
+                         
+                      </ul>
+                    </li>
+                     
+                </ul>
+               
+            </li>
+                    <li class="sanitaryware">
+                                <a href="http://www.parryware.in/category_details.php?cat=5">
+                                <span>Furniture</span></a>
+                <ul class="inner_nav">
+                                        <li>
+                                                <a href="http://www.parryware.in/category_details.php?cat=5&sub_cat=25">
+                                                <span>Vanity cabinets</span></a>
+                      <ul class="inner_nav">
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=5&sub_cat=25&other=59">
+                                                        Floor Mounted/PVC</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=25&other=60">
+                                                        Wall Hung/PVC</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=5&sub_cat=25&other=61">
+                                                        Floor Mounted/MDF</a></li>
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=5&sub_cat=25&other=96">
+                                                        Wall Hung/MDF</a></li>
+                         
+                      </ul>
+                    </li>
+                                        <li>
+                                                <a href="http://www.parryware.in/category_details.php?cat=5&sub_cat=28">
+                                                <span>Reflexion mirrors</span></a>
+                      <ul class="inner_nav">
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=5&sub_cat=28&other=87">
+                                                        Reflexion Mirrors</a></li>
+                         
+                      </ul>
+                    </li>
+                     
+                </ul>
+               
+            </li>
+                    <li class="sanitaryware">
+                                <a href="http://www.parryware.in/category_details.php?cat=6">
+                                <span>Electronic toilets</span></a>
+                <ul class="inner_nav">
+                                        <li>
+                                                <a href="http://www.parryware.in/category_details.php?cat=6&sub_cat=26">
+                                                <span>Electronic toilets</span></a>
+                      <ul class="inner_nav">
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=6&sub_cat=26&other=63">
+                                                        Electronic Toilets</a></li>
+                         
+                      </ul>
+                    </li>
+                                        <li>
+                                                <a href="http://www.parryware.in/category_details.php?cat=6&sub_cat=27">
+                                                <span>Electronic seat covers</span></a>
+                      <ul class="inner_nav">
+                                                    <li>
+                                                        <a href="http://www.parryware.in/category_details.php?cat=6&sub_cat=27&other=64">
+                                                        Electronic Seat Covers</a></li>
+                         
+                      </ul>
+                    </li>
+                     
+                </ul>
+               
+            </li>
+        
+        <!-- <li class="sanitaryware"><a href="#"><span>Sanitaryware</span></a>
+          <ul class="inner_nav">
+            <li><a href="#"><span>Closets</span></a>
+              <ul class="inner_nav">
+                <li><a href="#">Basins and Pedestals</a></li>
+                <li><a href="#">Counter Top </a></li>
+                <li><a href="#">Below Counter</a></li>
+                <li><a href="#">Bowl</a></li>
+                <li><a href="#">Semi Recessed Basin</a></li>
+                <li><a href="#">Wall hung Basins</a></li>
+                <li><a href="#">Corner Basin</a></li>
+              </ul>
+            </li>
+            <li><a href="#"><span>Basins</span></a>
+              <ul class="inner_nav">
+                <li><a href="#">Basins and Pedestals</a></li>
+                <li><a href="#">Counter Top </a></li>
+                <li><a href="#">Below Counter</a></li>
+                <li><a href="#">Bowl</a></li>
+                <li><a href="#">Semi Recessed Basin</a></li>
+                <li><a href="#">Wall hung Basins</a></li>
+                <li><a href="#">Corner Basin</a></li>
+              </ul>
+            </li>
+            <li><a href="#"><span>Coventina</span></a>
+              <ul class="inner_nav">
+                <li><a href="#">Basins and Pedestals</a></li>
+                <li><a href="#">Counter Top </a></li>
+                <li><a href="#">Below Counter</a></li>
+                <li><a href="#">Bowl</a></li>
+                <li><a href="#">Semi Recessed Basin</a></li>
+                <li><a href="#">Wall hung Basins</a></li>
+                <li><a href="#">Corner Basin</a></li>
+              </ul>
+            </li>
+            <li><a href="#"><span>Urinals</span></a></li>
+          </ul>
+        </li>
+        <li class="faucets"><a href="#"><span>Faucets</span></a></li>
+        <li class="wellness"><a href="#"><span>Wellness</span></a></li>
+        <li class="allied_products"><a href="#"><span>Allied Products</span></a></li>
+        <li class="furniture"><a href="#"><span>Furniture</span></a></li>
+        <li class="electronic_toilets"><a href="#"><span>Electronic Toilets</span></a></li> -->
+      </ul>
+    </div>
+    <footer>
+  <div class="socialIcons">
+    <ul>
+      <li class="faceBook"><a href="https://www.facebook.com/ParrywareIndia?fref=ts" target="_blank" class="sprite"></a></li>
+      <li class="twitter" target="_blank"><a href="/blog" class="sprite"></a></li>
+      <!--<li class="pinterest"><a href="#" class="sprite"></a></li>
+      <li class="youTube"><a href="#" class="sprite"></a></li>-->
+    </ul>
+  </div>
+  <div class="contactIcons">
+    <ul>
+      <li><a href="#" class="contact sprite"></a></li>
+      <li><a href="#" class="chat sprite"></a></li>
+      <li><a href="#" class="call sprite"></a></li>
+    </ul>
+  </div>
+  <div class="disclaimerSec">
+    <ul>
+      <li><a href="http://www.parryware.in/disclaimer.php">Disclaimer</a></li>
+      <li><a href="http://www.parryware.in/faqs.php">FAQs</a></li>
+    </ul>
+  </div>
+  <div class="copyRight">© Copyright 2015.</div>
+</footer></section>  <section class="wrapper">
+    <section class="bathTubTop_sec">
+      <!--<section class="breadCrumbs btmBdr">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li>Catalogues</li>
+        </ul>
+      </section>-->
+      <section class="catalogues_sec">
+        <h2>404-Content not found</h2>
+        <h3>This page does not exist.</h3>
+		<img src="/images/404.jpg"/>
+      </section>
+    </section>
+  </section>
+</section>
+<section class="fixed_sec">
+  <ul>
+    <li><a href="tel:18002746060">Call Us</a></li>
+    <li><a class="" href="contact_us.php">Enquiry</a></li>
+    
+    <li class="productClick"><a class="" href="#">Products</a>
+      <div class="nav_mob_blackbg">
+        <ul class="product_mob_menu">
+                    <li>
+          <a href="#" class="nextChild"><span>Sanitaryware</span></a>
+            <ul class="sub_sub_nav_mob">
+                             <li>
+              
+                                      <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=1">
+                                      <span>CLOSETS</span></a></li>
+                            <li>
+              
+                                      <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=2">
+                                      <span>BASINS</span></a></li>
+                            <li>
+              
+                                      <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=3">
+                                      <span>COVENTINA</span></a></li>
+                            <li>
+              
+                                      <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=4">
+                                      <span>URINALS</span></a></li>
+                            <li>
+              
+                                      <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=5">
+                                      <span>PARTITION</span></a></li>
+                            <li>
+              
+                                      <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=6">
+                                      <span>Traps</span></a></li>
+                            <li>
+              
+                                      <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=8">
+                                      <span>LLC & LAB SINK</span></a></li>
+                            <li>
+              
+                                      <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=29">
+                                      <span>Seat Covers</span></a></li>
+                            <li>
+              
+                                      <a href="http://www.parryware.in/category_details.php?cat=1&sub_cat=30">
+                                      <span>Cistern</span></a></li>
+                            <!-- <li><a href="index.html"><span>Basins</span></a></li>
+              <li><a href="index.html"><span>Coventina</span></a></li>
+              <li><a href="index.html"><span>Urinals</span></a></li> -->
+            </ul>
+          </li>
+                    <li>
+          <a href="#" class="nextChild"><span>Faucets</span></a>
+            <ul class="sub_sub_nav_mob">
+                             <li>
+              
+                                      <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=9">
+                                      <span>SENSOR TAPS</span></a></li>
+                            <li>
+              
+                                      <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=10">
+                                      <span>SMART</span></a></li>
+                            <li>
+              
+                                      <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=11">
+                                      <span>SINGLE LEVER</span></a></li>
+                            <li>
+              
+                                      <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=12">
+                                      <span>QUARTER TURN</span></a></li>
+                            <li>
+              
+                                      <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=13">
+                                      <span>HALF TURN</span></a></li>
+                            <li>
+              
+                                      <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=14">
+                                      <span>FITTINGS</span></a></li>
+                            <li>
+              
+                                      <a href="http://www.parryware.in/product_list.php?cat=2&sub_cat=15">
+                                      <span>ACCESSORIES</span></a></li>
+                            <!-- <li><a href="index.html"><span>Basins</span></a></li>
+              <li><a href="index.html"><span>Coventina</span></a></li>
+              <li><a href="index.html"><span>Urinals</span></a></li> -->
+            </ul>
+          </li>
+                    <li>
+          <a href="#" class="nextChild"><span>Wellness</span></a>
+            <ul class="sub_sub_nav_mob">
+                             <li>
+              
+                                      <a href="http://www.parryware.in/category_details.php?cat=3&sub_cat=16">
+                                      <span>Shower Panels</span></a></li>
+                            <li>
+              
+                                      <a href="http://www.parryware.in/category_details.php?cat=3&sub_cat=17">
+                                      <span>Shower Enclosures</span></a></li>
+                            <li>
+              
+                                      <a href="http://www.parryware.in/category_details.php?cat=3&sub_cat=18">
+                                      <span>Whirlpools & Bathtubs</span></a></li>
+                            <!-- <li><a href="index.html"><span>Basins</span></a></li>
+              <li><a href="index.html"><span>Coventina</span></a></li>
+              <li><a href="index.html"><span>Urinals</span></a></li> -->
+            </ul>
+          </li>
+                    <li>
+          <a href="#" class="nextChild"><span>Allied Products</span></a>
+            <ul class="sub_sub_nav_mob">
+                             <li>
+              
+                                      <a href="http://www.parryware.in/category_details.php?cat=4&sub_cat=23">
+                                      <span>Kitchen Sinks</span></a></li>
+                            <li>
+              
+                                      <a href="http://www.parryware.in/category_details.php?cat=4&sub_cat=24">
+                                      <span>Pressure Boosters</span></a></li>
+                            <!-- <li><a href="index.html"><span>Basins</span></a></li>
+              <li><a href="index.html"><span>Coventina</span></a></li>
+              <li><a href="index.html"><span>Urinals</span></a></li> -->
+            </ul>
+          </li>
+                    <li>
+          <a href="#" class="nextChild"><span>Furniture</span></a>
+            <ul class="sub_sub_nav_mob">
+                             <li>
+              
+                                      <a href="http://www.parryware.in/category_details.php?cat=5&sub_cat=25">
+                                      <span>Vanity Cabinets</span></a></li>
+                            <li>
+              
+                                      <a href="http://www.parryware.in/category_details.php?cat=5&sub_cat=28">
+                                      <span>Reflexion Mirrors</span></a></li>
+                            <!-- <li><a href="index.html"><span>Basins</span></a></li>
+              <li><a href="index.html"><span>Coventina</span></a></li>
+              <li><a href="index.html"><span>Urinals</span></a></li> -->
+            </ul>
+          </li>
+                    <li>
+          <a href="#" class="nextChild"><span>Electronic Toilets</span></a>
+            <ul class="sub_sub_nav_mob">
+                             <li>
+              
+                                      <a href="http://www.parryware.in/category_details.php?cat=6&sub_cat=26">
+                                      <span>ELECTRONIC TOILETS</span></a></li>
+                            <li>
+              
+                                      <a href="http://www.parryware.in/category_details.php?cat=6&sub_cat=27">
+                                      <span>ELECTRONIC SEAT COVERS</span></a></li>
+                            <!-- <li><a href="index.html"><span>Basins</span></a></li>
+              <li><a href="index.html"><span>Coventina</span></a></li>
+              <li><a href="index.html"><span>Urinals</span></a></li> -->
+            </ul>
+          </li>
+                    <!-- <li><a href="#" class="nextChild"><span>Faucets</span></a>
+            <ul class="sub_sub_nav_mob">
+              <li><a href="index.html"><span>Closets</span></a></li>
+              <li><a href="#"><span>Basins</span></a></li>
+              <li><a href="#"><span>Coventina</span></a></li>
+              <li><a href="index.html"><span>Urinals</span></a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="nextChild"><span>Wellness</span></a>
+            <ul class="sub_sub_nav_mob">
+              <li><a href="index.html"><span>Closets</span></a></li>
+              <li><a href="#"><span>Basins</span></a></li>
+              <li><a href="index.html"><span>Coventina</span></a></li>
+              <li><a href="index.html"><span>Urinals</span></a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="nextChild"><span>Allied Products</span></a>
+            <ul class="sub_sub_nav_mob">
+              <li><a href="#"><span>Closets</span></a></li>
+              <li><a href="#"><span>Basins</span></a></li>
+              <li><a href="#"><span>Coventina</span></a></li>
+              <li><a href="#"><span>Urinals</span></a></li>
+            </ul>
+          </li>
+          <li><a href="#"><span>Furniture</span></a></li>
+          <li><a href="#"><span>Electronic Toilets</span></a></li> -->
+        </ul>
+      </div>
+    </li>
+  </ul>
+</section><script type="text/javascript" src="http://www.parryware.in/js/jquery-1.8.2.js"></script> 
+<script type="text/javascript" src="http://www.parryware.in/js/html5.js"></script> 
+<script type="text/javascript" src="http://www.parryware.in/js/functions.js"></script> 
+<script type="text/javascript" src="http://www.parryware.in/js/jquery.bxslider.js"></script> 
+<script type="text/javascript" src="http://www.parryware.in/js/script.js"></script> 
+<script type="text/javascript">
+var parentAccordion=new TINY.accordion.slider("parentAccordion");
+parentAccordion.init("acc","h3",-1,0,"selected");
+</script>
+</body>
+</html>

@@ -136,8 +136,9 @@ $(document).ready(function(){
 	$(".collapsible-body").hide();
 	$(".collapsible-inner_body").hide();
 
+
 	$(".collapsible-header").click(function(){
-		$(this).toggleClass("active");
+		$(this).toggleClass("active",1000);
 		$(this).next().slideToggle();
 
 		$(".collapsible-header").not(this).each(function(){

@@ -16,7 +16,7 @@
                 <div class="row">
                     <div class="col-md-8">
                         <br>
-                        <h6 style="color:#6262ff;font-weight:bold;margin-top:-12px;">{{ $categoryName->name }}</h6>
+                        <h6 style="color:#6262ff;font-weight:bold;margin-top:-12px;"><a href="{{ url('category/'.$categoryName->id) }}">{{ $categoryName->name }}</a></h6>
 
                         <hr>
                         <!-- carousel-->
@@ -80,11 +80,30 @@
                         {{--Showing 5 random products according to category--}}
                         @foreach($subcats as $subcat)
                             <div class="row" style="margin-top:40px">
-                                <h6 style="margin-left:20px;color:#000;font-weight:bold;font-size:20px;margin-top:8px">{{ $subcat->name }}</h6>
+                                <h6 style="margin-left:20px;color:#000;font-weight:bold;font-size:20px;margin-top:8px">{{ $subcat->name }} <small><a href="{{ url('subCategory/'.$subcat->id) }}" style="color:#FF6D5A" class="view_more">View More</a></small></h6>
                                 @foreach($products[$subcat->id] as $product)
                                     <a href="{{ url('product/'.$product->id)  }}">
                                         <div class="col-md-3 column">
-                                            <div id="wrapper" style="background-color: #939393">
+                                            <div id="wrapper" style="background-color: #fff;height:290px;width:190px">
+                                                <div class="product_image">
+                                                    @if(isset($product->thumbnailImage->image_url))
+                                                        <img src="{{ URL::asset("product/".$product->thumbnailImage->image_url) }}" alt="" height="160" width="170">
+                                                    @else
+                                                        <img src="{{ URL::asset("images/no-image-box.png") }}" alt="" height="160" width="170">
+                                                    @endif
+                                                </div>
+                                                <div class="product_description">
+                                                    <hr>
+                                                    <a style="font-size:13px;font-family:Arial">
+                                                        @foreach($product->filters as $filter)
+                                                            @if($filter->filterName->name == "Brand")
+                                                                <span> <strong>{{ $filter->data }}  </strong></span>
+                                                            @endif
+                                                        @endforeach
+                                                        {{ $product->name }}
+                                                    </a>
+                                                </div>
+                                            {{--<div id="wrapper" style="background-color: #939393">
                                                 <div class="demo-card-square mdl-card">
                                                     <div class="mdl-card__title mdl-card--expand">
                                                         <img src="{{ URL::asset('images/img-thing.jpg') }}" alt="">
@@ -97,11 +116,14 @@
                                                     <div class="mdl-card__supporting-text">
                                                         Rs.399/-
                                                     </div>
-                                                </div>
+                                                </div>--}}
                                             </div>
                                         </div>
                                     </a>
                                 @endforeach
+                                @if($productsCount[$subcat->id] == 0)
+                                    Sorry, No product available.
+                                @endif
 
                             </div>
                         @endforeach

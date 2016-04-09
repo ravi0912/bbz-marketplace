@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+ <!--  <meta charset="utf-8"> -->
+  <meta name = "format-detection" content = "telephone=no" />
+  
+  
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/camera.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-migrate-1.2.1.js"></script>
+  <script src="js/camera.js"></script>
+  <script src="js/jquery.equalheights.js"></script>
+  <!--[if (gt IE 9)|!(IE)]><!-->
+
+  <script src="js/jquery.mobile.customized.min.js"></script>
+  <script src="js/wow/wow.js"></script>
+
+    <script type="text/javascript" src="js/all.js"> </script>
+  <script>
+
+    $(document).ready(function () {
+      if ($('html').hasClass('desktop')) {
+        new WOW().init();
+		$('#topimg').fadeOut();
+      }
+    });
+  </script>
+  <!--<![endif]-->
+ 
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+
+<script type="text/javascript">
+        function ClearPlaceHolder(input) {
+            if (input.value == input.defaultValue) {
+                input.placeholder = "Search Product";
+            }
+        }
+        function SetPlaceHolder(input) {
+            if (input.placeholder == "Search Product") {
+                input.placeholder = "Search";
+            }
+        }
+
+		//$('.hastip').tooltipsy();
+
+	
+
+		$(window).scroll(function() {
+
+		if ($(this).scrollTop()>0)
+		 {
+			$('#topimg').fadeIn();
+		 }
+		else
+		 {
+		  $('#topimg').fadeOut();
+		 }
+		});
+    </script>
+
+ 
+<script type="text/javascript">
+
+$(document).ready(function() {
+	var track_load = 0; //total loaded record group(s)
+	var loading  = false; //to prevents multipal ajax loads
+	var total_groups = 11; //total record group(s)
+	var state = 0; 
+	var catval = 'gvt'; 
+ 
+/*
+	$('#results').load("autoload_process5.php", {'group_no':track_load,'state':state,'catval':catval}, function() {track_load++;}); //load first group
+	
+	$(window).scroll(function() { //detect page scroll
+		
+		if($(window).scrollTop() + $(window).height() + 20 >= $(document).height()) //user scrolled to bottom of the page?
+		{
+			
+			if(track_load <= total_groups && loading==false) //there's more data to load
+			{
+			state= document.getElementById('state').value;
+			city= document.getElementById('city').value;
+			var catval = 'gvt';
+				loading = true; //prevent further ajax loading
+				$('.animation_image').show(); //show loading image
+				
+				//load data from the server using a HTTP POST request
+				$.post('autoload_process5.php',
+					{
+					'group_no': track_load, 
+					'state':state,
+					'city':city,
+					'catval':catval
+					}, 
+					function(data){
+									
+					$("#results").append(data); //append received data into the element
+
+					//hide loading image
+					$('.animation_image').hide(); //hide loading image once data is received
+					
+					track_load++; //loaded group increment
+					loading = false; 
+				
+				}).fail(function(xhr, ajaxOptions, thrownError) { //any errors?
+					
+					alert(thrownError); //alert with HTTP error
+					$('.animation_image').hide(); //hide loading image
+					loading = false;
+				
+				});
+				
+			}
+		}
+	}); */
+});
+
+function autoload(stateid,cityid) {
+	var track_load = 0; //total loaded record group(s)
+	var loading  = false; //to prevents multipal ajax loads
+	var total_groups = 11; //total record group(s)
+	var state = stateid; 
+	var city = cityid; 
+	var catval = 'gvt'; 
+	$('#results').load("autoload_process5.php", {'group_no':track_load,'state':state,'city':city,'catval':catval}, function() {track_load++;}); //load first group
+
+	
+	$(window).scroll(function() { //detect page scroll
+		
+		if($(window).scrollTop() + $(window).height() + 20 >= $(document).height()) //user scrolled to bottom of the page?
+		{
+			
+			if(track_load <= total_groups && loading==false) //there's more data to load
+			{
+			state= document.getElementById('state').value;
+			city= document.getElementById('city').value;
+			var catval = 'gvt'; 
+				loading = true; //prevent further ajax loading
+				$('.animation_image').show(); //show loading image
+				
+				//load data from the server using a HTTP POST request
+				$.post('autoload_process5.php',
+					{
+					'group_no': track_load, 
+					'state':state,
+					'city':city,
+					'catval':catval
+					}, 
+					function(data){
+									
+					$("#results").append(data); //append received data into the element
+
+			//	$.getScript('js/all.js');
+					//hide loading image
+					$('.animation_image').hide(); //hide loading image once data is received
+					
+					track_load++; //loaded group increment
+					loading = false; 
+				
+				}).fail(function(xhr, ajaxOptions, thrownError) { //any errors?
+					
+					alert(thrownError); //alert with HTTP error
+					$('.animation_image').hide(); //hide loading image
+					loading = false;
+				
+				});
+				
+			}
+		}
+	});
+
+
+}
+
+
+function searchfilter()
+{
+ShowSecond();
+var state= document.getElementById('state').value;
+
+//autoload(state,0);
+return true;
+}
+
+function searchfilter2()
+{
+ShowSecond1();
+var state= document.getElementById('state').value;
+var city= document.getElementById('city').value;
+var CatForCity;
+
+document.getElementById('city').blur();
+ 
+autoload(state,city);
+//document.getElementById('city').focus=false;
+return true;
+}
+
+$(document).ready(function(){
+		$('#state').change(function(){
+			CatForCity = " and gvt != '' ";
+			//alert(CatForCity);
+			state=$(this).val();
+			
+			getCity(state);
+			$('#city').val('0');
+			city=$('#city').val();
+		
+			 });			
+			
+			function getCity(state){
+					$.post("function.php?state="+state+"&CatForCity="+CatForCity,function(data){
+						if (data != "") {
+							$('#city').html(data).focus();
+
+						}
+					});
+				}
+			});
+
+
+</script>
+
+<style>
+    .show {
+         -o-transition: opacity 1s;
+         -moz-transition: opacity 1s;
+         -webkit-transition: opacity 1s;
+         transition: opacity 1s;
+	      opacity:1;
+		  width: 100%;
+		  height: 1500px;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  bottom: 0;
+		  position: absolute;
+		  background: rgba(245,245,245, 0.8);
+		  color: #58595b;
+		  z-index: 10000;
+		  visibility:visible;
+    }
+    .hide{  opacity:0; z-index: 0;width:1px;  height: 1px;visibility:hidden;}
+  </style>
+  <script>
+    function ShowSecond()
+    {
+      var div2 = document.getElementById("div2");
+	  document.getElementById("results").innerHTML = 'Now select <b>Area</b>.';
+     div2.className="show";
+     setTimeout(function() {
+        div2.className="hide";
+     }, 3000);
+    }
+
+	function ShowSecond1()
+    {
+      var div3 = document.getElementById("div3");
+     div3.className="show";
+     setTimeout(function() {
+        div3.className="hide";
+     }, 3000);
+    }
+  </script>
+
+</head>
+
+
+<body>
+<div id="div2" class="animation_image hide"   align="center"> <div style="position:fixed; top: 50%;  " class="loader_left"><img src="images/bx_loader.gif" > Loading Cities...</div></div>
+<div id="div3" class="animation_image hide"   align="center"> <div style="position:fixed; top: 50%;  " class="loader_left"><img src="images/bx_loader.gif" > Loading Dealers...</div></div>
+<!--========================================================
+                          HEADER
+=========================================================-->
+<header id="header">
+  <div id="menu_container"  class="fixed" style="  background: #fff; ">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+          <h1 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
+            <a href="index.php"><img src="images/kcl_logo.png" style="max-height:48px;" /></a>
+          </h1>
+          <!--
+ 		  <div class="search_show " style="padding-top: 11px; font: 400 11px/20px 'futura_lt_btlight'; font-weight: 300; text-transform: uppercase; -webkit-transition: 0.3s all ease; transition: 0.3s all ease; color: #000000; "><br>Help Line: 1800 11 2992</div> 
+          -->
+          
+ 		  <div class="search_show " style="padding-top: 11px; font: 400 11px/20px 'futura_lt_btlight'; font-weight: 300; text-transform: uppercase; -webkit-transition: 0.3s all ease; transition: 0.3s all ease; color: #000000; "><br/><br/>
+          <a href="deshkesaath/">
+          <img src="images/deshkesaath.png" border="0" />
+          </a>
+          </div> 
+          
+		  <div class="search_show"><form style=" padding-top: 4px; " action="keyword-search.php" method="post"><input type="search" placeholder="Search" name="keyword" id="keyword" onfocus="ClearPlaceHolder(this)" onblur="SetPlaceHolder(this)">	</form>
+		  <br>
+		  			<!--  <a href="#" class="tooltip-bottom" data-tooltip="Shortlisted Products" style=" text-transform: capitalize; "><img src="images/wishlist_icon.jpg"  style="padding-left: 0px; margin-left: 0px; border-radius: 4px;" > 
+			  </a> -->
+			  
+
+		  
+		  </div>
+		   <nav  class="smallscreen"  >
+            <ul class="sf-menu top-menu">
+            
+             <li style="display: inline-block; -webkit-transition: 0.3s all ease; transition: 0.3s all ease; color: #000000; ">
+              <a style=" padding-top: 15px; " href="deshkesaath/">
+              <img src="images/deshkesaath.png" border="0" />
+              </a>
+             </li>
+             <!--
+              <li style="padding-top: 11px; font: 400 11px/20px 'futura_lt_btlight'; font-weight: 300; text-transform: uppercase; display: inline-block; -webkit-transition: 0.3s all ease; transition: 0.3s all ease; color: #000000; ">Help Line: 1800 11 2992</li>
+              --> 
+              
+			    <li style=" padding-top: 0px; ">
+									<form style=" padding-top: 4px; " action="keyword-search.php" method="post">
+										<input type="search" placeholder="Search" name="keyword" id="keyword"  onfocus="ClearPlaceHolder(this)" onblur="SetPlaceHolder(this)">
+									</form>
+							</li>
+
+
+
+			 
+ </ul>
+			</nav>
+ 
+   <nav id="cbp-hrmenu" class=" cbp-hrmenu wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp; position: relative; ">
+            <ul class="sf-menu">
+                <li id=menu1>	<a href="about_master.php">About Us</a>
+
+                    <div class="cbp-hrsub" style="   margin-left: 100px !important;    margin-top: -12px; ">
+                        <div class="cbp-hrsub-inner">
+                            <div>
+                                	
+
+                                <ul class="sub-menu bckimage_inner" style=" padding-right: 16px !important;   ">
+                                      <li><a href="about-us.php">Company Information</a>
+                                    </li>
+                                    <li><a href="chairman-message.php">Chairman's Message</a>
+                                    </li>
+                                    <li><a href="exports.php">Our Exports</a>
+                                    </li>
+                                    <li><a href="awards-certifications.php">Award's & Certifications</a>
+                                    </li>
+                                    <li><a href="manufacturing-facilities.php">Manufacturing Facilities</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                         
+                    </div>
+                
+                </li>
+                <li id=menu2>	<a href="category-master.php">Products</a>
+                
+                	<!--
+
+                    <div class="cbp-hrsub bckimage_inner" style="    margin-top: -12px;  max-width: 70em; margin: 0 auto; padding: 0 0; width: 80%;      left: 0; margin-left: 100px !important; ">
+                        <div class="cbp-hrsub-inner">
+                            <div style=" width: 43%; float: left; ">
+							<b>By Category</b>
+                               <ul class="sub-menu " >
+                                   <li style=" margin-top: 8px; "><a href="categories.php?catid=1">Ceramic Wall & Floor Tiles</a>
+                                    </li>
+                                    <li><a href="categories.php?catid=3">Polished Vitrified Tiles</a>
+                                    </li>
+                                    <li><a href="categories.php?catid=2">Glazed Vitrified Tiles</a> 
+                                    </li>
+                                    <li><a href="http://www.kerovit.com/" target="_blank">Sanitaryware & Faucets</a> 
+                                    </li>
+                                    <li><a href="tile-adhesives-grout.php">Tile Adhesive & Grout</a> 
+                                    </li>
+                                </ul>
+                            </div>
+							<div style=" width:43%; float: right; padding: 0 1em 0 1em; ">
+							<b>By Application</b>
+                                <ul class="sub-menu" >
+                                    <li style=" margin-top: 8px; "><a href="application.php?catid=2">Bathroom</a></li>
+                                    <li><a href="application.php?catid=4">Kitchen</a></li>
+                                    <li><a href="application.php?catid=1">Bedroom</a></li>
+                                    <li><a href="application.php?catid=5">Living Room</a></li>
+                                    <li><a href="application.php?catid=6">Outdoor</a></li>
+
+                                </ul>
+                            </div>
+                           
+                        </div>
+                       
+                    </div>
+                    
+                    -->
+                    
+                </li>
+               
+                <li id=menu4>	<a href="investors_master.php">Investors</a>
+
+                  <div class="cbp-hrsub bckimage_inner" style="     margin-top: -12px; max-width: 70em; margin: 0 auto; padding: 0 0; width: 80%;      left: 0; background: #fff;   margin-left: 200px !important; ">
+                        <div class="cbp-hrsub-inner">
+                           <!-- <div>
+                                <ul class="sub-menu bckimage_inner" style=" padding-right: 16px !important; ">
+                                <li><a href="capital-history.php">Capital History</a></li>
+								  <li><a href="corporate-governance.php">Corporate Governance</a></li>
+								  <li><a href="#">Shareholding Pattern</a></li>
+								  <li><a href="stock-quote.php">Stock Quote</a></li>
+								  <li><a href="#">Financial Results</a></li>
+								  <li><a href="#">Annual Reports</a></li>
+								  <li><a href="#">AGM/EGM/Postal Ballot</a></li>
+								  <li><a href="#">Investor Release</a></li>
+								  <li><a href="financial-at-a-glance.php">Financial At a Glance</a></li>
+								  <li><a href="share-holder-query.php">Share Holder Query</a></li>
+								  <li><a href="#">Analyst Presentation</a></li>
+								  <li><a href="#">Unclaimed Divident</a></li>
+								  <li><a href="#">Subsidiary Companies</a></li>
+                                </ul>
+                                
+                            </div> -->
+							 <div style=" width: 43%; float: left; ">
+                               <ul class="sub-menu " >
+                                   <li><a href="capital-history.php?id=1">Capital History</a></li>
+								  <li><a href="corporate-governance.php?id=2">Corporate Governance</a></li>
+								  <li><a href="shareholding-pattern.php?id=3">Shareholding Pattern</a></li>
+								  <li><a href="stock-quote.php?id=4">Stock Quote</a></li>
+								  <li><a href="financial-results.php?id=5">Financial Results</a></li>
+								  <li><a href="annual-reports.php?id=6">Annual Reports</a></li>
+								  <li><a href="agmegmpostal-ballot.php?id=7">AGM/EGM/Postal Ballot</a></li>
+                                  <li><a href="investor-release.php?id=8">Investor Release</a></li>
+                                </ul>
+                            </div>
+							<div style=" width:43%; float: right; padding: 0 1em 0 1em; ">
+                                <ul class="sub-menu" >
+								  <li><a href="financial-at-a-glance.php?id=9">Financial At a Glance</a></li>
+								  <li><a href="share-holder-query.php?id=10">Share Holder Query</a></li>
+								  <li><a href="analyst-presentation.php?id=11">Analyst Presentation</a></li>
+								  <li><a href="unclaimed-dividend.php?id=12">Unclaimed Dividend</a></li>
+								  <li><a href="subsidiary-companies.php?id=13">Subsidiary Companies</a></li>
+								  <li><a href="board_meeting_notices.php?id=14">Board Meeting Notices</a></li>
+								  <li><a href="disclosures.php?id=15">Disclosures</a></li>
+								  <li><a href="investors-meet.php?id=16">Investors Meet</a></li>
+								  <li><a href="composition_of_committees.php?id=17">Composition of Committees</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </li>
+				<!-- <li id=menu3>	<a href="dealers.php">Dealers</a>
+
+     
+                     
+                </li> -->
+                <li id=menu5>	<a href="mediacentre_master.php" >Media Centre</a>
+
+                    <div class="cbp-hrsub" style=" margin-left: 100px !important;     margin-top: -12px;">
+                        <div class="cbp-hrsub-inner">
+                            <div>
+                             
+
+                                 <ul class="sub-menu bckimage_inner" style=" padding-right: 16px !important;     ">
+                 <li><a href="pressrelease.php">Press Release</a></li>
+                  <li><a href="eventgallery.php">Event Gallery</a></li>
+                  <li><a href="corporatefilm.php">Corporate AV</a></li>
+                  <li><a href="tvcs.php">TVC</a></li>
+                                </ul>
+                            </div>
+                           
+                        </div>
+                        
+                    </div>
+                     
+                </li>
+                <li id=menu6>	<a href="career_master.php">Career</a>
+
+                    <div class="cbp-hrsub" style=" margin-left: 100px !important;    margin-top: -12px;">
+                        <div class="cbp-hrsub-inner">
+                            <div>
+                             
+
+                                <ul class="sub-menu bckimage_inner" style=" padding-right: 16px !important; ">
+                  <li><a href="working-kajaria.php">Working@Kajaria</a></li>
+                  <li><a href="working-with-us.php">Working with us</a></li>
+                  <li><a href="learning-development.php">Learning & Development</a></li>
+                                </ul>
+                            </div>
+                           
+                        </div>
+                        
+                    </div>
+                    
+                </li>
+                <li id=menu7>	<a href="locateus_master.php" style=" padding-right: 0px; ">Locate Us</a>
+
+                    <div class="cbp-hrsub" style=" margin-left: -72px !important;    margin-top: -12px;">
+                        <div class="cbp-hrsub-inner">
+                            <div>
+                             
+
+                                <ul class="sub-menu bckimage_inner" style=" padding-right: 16px !important; ">
+ <li><a href="dealers.php">Where To Buy</a></li>
+ <li><a href="display-centresregional-offices.php">Display Centres / Regional Offices</a></li>
+                  <li><a href="corporate-office.php">Corporate Office</a></li>
+                                </ul>
+                            </div>
+                           
+                        </div>
+                        
+                    </div>
+                  
+                </li>
+            </ul>
+        </nav>  
+
+<select class="select-menu sf-menu top-menu sf-js-enabled sf-arrows" onChange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+			<option value="#">Navigate to...</option>            
+			<option value="about_master.php">&nbsp;About us</option>
+			<option value="category-master.php">&nbsp;Products</option>
+			<option value="locateus_master.php">&nbsp;Locate Us</option>
+			<option value="mediacentre_master.php">&nbsp;Media Centre</option>
+			<option value="career_master.php">&nbsp;Career</option>
+			<option value="investors_master.php">&nbsp;Investors</option>
+		</select>
+        </div>
+      </div>
+    </div>
+	  <div id="topimg" style="clear: both; position: absolute; left: 0px;  width: 100%; height: 17px; opacity: 1; background: url(images/shadow.png) 50% 0% no-repeat;">&nbsp;</div>
+  </div>
+
+    <div class="clearfix"></div>
+  </div>
+</header>
+
+
+<!--========================================================
+                          CONTENT
+=========================================================-->
+<section id="content" style=" padding-top: 56px; ">
+  <div class="wrapper">
+			  <div class="container" style=" background-color: #004B88; width: 100%; height: 40px; color:#fff;valign:middle;">
+				  <div class="container">
+					<div class="grid_12"  style=" margin-left: 0px; ">
+                    <h2 style=" color: #fff; ">Locate Us - <span style=" font-size: 13px; vertical-align: baseline; ">Where To Buy</span></h2>
+					</div>
+				  </div>
+				</div>
+	  <div   style="background: url(images/dealer_banner.jpg) no-repeat center top;height:249px"  class="banner_hide">
+    <div class="container">
+
+      <div class="row">
+       
+      </div>
+    </div>
+  </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+          <div class="box1-wrapper1">
+            <div class="row">
+              
+			  <div class="grid_12">
+                <div class="box1 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
+				  <div class="row">
+				  <div class="grid_4">
+                  <form method="post" id="target" name="target">
+						  <div style="clear:both"></div>
+						  <div>
+							<select class="state" id="state" name="state" onChange="javascript:searchfilter();" style=" background: #1976d2; color: #fff; padding: 5px; border-radius: 17px; font: 400 15px/30px futura_lt_btlight;    min-width: 175px; ">
+							  <option value="0">-Select State-</option>
+							  											<option value="Andaman & Nicobar">Andaman & Nicobar</option>
+								  											<option value="Andhra Pradesh">Andhra Pradesh</option>
+								  											<option value="Assam">Assam</option>
+								  											<option value="Bihar">Bihar</option>
+								  											<option value="Chandigarh">Chandigarh</option>
+								  											<option value="Chhattisgarh">Chhattisgarh</option>
+								  											<option value="Delhi">Delhi</option>
+								  											<option value="Goa">Goa</option>
+								  											<option value="Gujarat">Gujarat</option>
+								  											<option value="Haryana">Haryana</option>
+								  											<option value="Himachal Pradesh">Himachal Pradesh</option>
+								  											<option value="Jammu & Kashmir">Jammu & Kashmir</option>
+								  											<option value="Jharkhand">Jharkhand</option>
+								  											<option value="Karnataka">Karnataka</option>
+								  											<option value="Kerala">Kerala</option>
+								  											<option value="Madhya Pradesh">Madhya Pradesh</option>
+								  											<option value="Maharashtra">Maharashtra</option>
+								  											<option value="Manipur">Manipur</option>
+								  											<option value="Meghalaya">Meghalaya</option>
+								  											<option value="Mizoram">Mizoram</option>
+								  											<option value="Nagaland">Nagaland</option>
+								  											<option value="Nepal">Nepal</option>
+								  											<option value="Orissa">Orissa</option>
+								  											<option value="Pondicherry">Pondicherry</option>
+								  											<option value="Punjab">Punjab</option>
+								  											<option value="Rajasthan">Rajasthan</option>
+								  											<option value="Tamil Nadu">Tamil Nadu</option>
+								  											<option value="Telangana">Telangana</option>
+								  											<option value="Tripura">Tripura</option>
+								  											<option value="Uttar Pradesh">Uttar Pradesh</option>
+								  											<option value="Uttarakhand">Uttarakhand</option>
+								  											<option value="West Bengal">West Bengal</option>
+								  							</select>
+							<select class="city" id="city" name="city"  onchange="javascript:searchfilter2();" style=" background: #1976d2; color: #fff; padding: 5px; border-radius: 17px; font: 400 15px/30px futura_lt_btlight;    min-width: 175px;">
+							  <option value="0">-Select Area-</option>		  
+							</select>
+							<br clear="all" />
+						  </div>
+						</form>
+						</div>
+						 <!-- <div class="grid_6" style=" text-align: right;     padding-top: 5px;">
+						  <img src=images/ceramic.png><a href="dealers.php?catid=1"> Ceramic Wall & Floor Tiles</a>   <img src=images/pvt.png> <a href="dealers.php?catid=2">Polished Vitrified Tiles</a>   <img src=images/gvt.png> <a href="dealers.php?catid=3">Glazed Vitrified Tiles</a>
+						  </div> -->
+						   <div class="grid_8" style=" text-align: right;  "> <!-- <a href="dealers.php">All Dealers</a> -->
+
+													  <a href="dealers.php?catid=1" class="tt"><img src="images/btn1.png"   border="0" alt="" onMouseOver="this.src='images/btn1_selected.png';" onMouseOut="this.src='images/btn1.png';" class="city"></a>   
+							  <a href="dealers.php?catid=2" class="tt"><img src="images/btn2.png"   border="0" alt="" onMouseOver="this.src='images/btn2_selected.png';" onMouseOut="this.src='images/btn2.png';" class="city"></a>   
+							  <a href="dealers.php?catid=3" class="tt"><img src="images/btn3_selected.png"  border="0" alt="" class="city"></a><br class="map_show">
+ <a href="dealers.php">All Dealers</a>
+							
+						  </div>
+						  </div>
+
+					<ol id="results" style=" padding-top: 20px; ">
+					<b><font color="#004b88">Exclusive Dealers for Glazed Vitrified Tiles</font></b> <br/>Select <b>State</b> and <b>Area</b> from above to view nearest dealer.					
+					</ol>
+
+					<div class="animation_image" style="display:none" align="center"><img src="images/bx_loader.gif"> Loading more dealers...</div>
+				
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+ <!-- Footer Start  -->
+
+ <div class="wrapper2" id="footer1">
+    <div class="container">
+      <div class="row">
+       
+          <div class="grid_3">
+          <div class="heading1">
+            <h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">Quick Links</h2>
+          </div>
+          <ul class="list1 list1__offset1">
+            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.15s">
+              <a href="categories.php?catid=1">Ceramic Walls & Floor Tiles</a>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+              <a href="categories.php?catid=3">Polished Vitrified Tiles</a>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
+              <a href="categories.php?catid=2">Glazed Vitrified Tiles</a>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+              <a href="dealers.php">Where To Buy</a>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.35s">
+              <a href="display-centresregional-offices.php">Display Centres / Regional Offices</a>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.35s">
+              <a href="corporate-office.php">Corporate Office</a>
+            </li>
+          </ul>
+		  
+        </div>
+		
+
+
+ <div class="grid_3">
+          <div class="heading1">
+            <h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">About us</h2>
+          </div>
+          
+          <ul class="list1 list1__offset1">
+            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
+              <a href="about-us.php">Company Information</a>
+            </li>
+            <li>
+            	<a href="chairman-message.php">Chairman's Message</a>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+              <a href="exports.php">Our Exports</a>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+              <a href="awards-certifications.php">Awards & Certifications</a>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+              <a href="manufacturing-facilities.php">Manufacturing Facilities</a>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="grid_3">
+          <div class="heading1">
+            <h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">Activities</h2>
+          </div>
+          <ul class="list1 list1__offset1">
+            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
+              <a href="newsupdation.php">News Updation</a>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.15s">
+              <a href="pressrelease.php">Press Release</a>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+              <a href="eventgallery.php">Event Gallery</a>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+              <a href="tvcs.php">TVC</a>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
+              <a href="corporatefilm.php">Corporate AV</a>
+            </li>
+          </ul>
+        </div>
+
+      
+		 <div class="grid_3">
+          <div class="heading1">
+            <h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">Our Catalog</h2>
+          </div>
+          <div class="box4">
+            <div class="gallery_image wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
+              <a class="big-image" href="latest-catalogue.php?id=1" style=" background-color: transparent; ">
+                <img src="images/pdf-catalog.png" alt="" style=" border-radius: 10px; " />
+                <div class="gallery_hover">
+                  <i class="fa fa-search-plus"></i>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </div>
+   
+  <!-- Footer End -->
+ 
+</section>
+
+<!--========================================================
+                          FOOTER
+=========================================================-->
+<footer id="footer">
+  <div class="wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12"  style="    font-size: 15px;">
+          <div class="privacy-block wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
+            <a href="#">Kajaria Ceramics Limited</a> &copy; <span id="copyright-year"></span> All Rights Reserved<br>
+            
+				<a href="disclaimer.php" style="font-size: 13px;">Disclaimer</a>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+
+
+
+
+
+		<script src="js/cbpHorizontalMenu.min.js"></script>
+		<!-- <script>
+			$(function() {
+				cbpHorizontalMenu.init();
+			});
+		</script> -->
+		<script>
+		var $listItems = $( '#cbp-hrmenu > ul > li' );
+		$listItems.hover(function() {
+		var id = $(this).attr('id');
+		var t = setTimeout(function(){
+		$('#'+id).addClass( 'cbp-hropen' );
+		}, 200);
+		}, function() {
+		var id = $(this).attr('id');
+		var t = setTimeout(function(){
+		$('#'+id).removeClass( 'cbp-hropen' );
+		}, 300);
+		});
+		</script>
+
+
+
+<script>
+  (function (w,i,d,g,e,t,s) {w[d] = w[d]||[];t= i.createElement(g);
+    t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t, s);
+  })(window, document, '_gscq','script','//widgets.getsitecontrol.com/30357/script.js');
+</script>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45866040-1', 'kajariaceramics.com');
+  ga('send', 'pageview');
+
+</script>
+
+
+			<div id="popup1" class="modal-box">
+    <header> <a href="#" class="js-modal-close close">×</a>
+    <h3 style="font-size: 15px;   font-weight: 700; text-align: left; padding: 13px 0px 12px 7px;line-height: 1; margin: 0; ">Your Shorlisted Products</h3>
+  </header>
+  <div class="modal-body">
+    <p>
+	<table cellpadding=2 width=100%>
+	</table>
+</p>
+  </div>
+  <footer> <a href="product_enquiry.php" style="float:left;"><img src="images/sendEnquiry-productrequest.png" onMouseOver="this.src='images/sendEnquiry-productrequest_mouseover.png'" onMouseOut="this.src='images/sendEnquiry-productrequest.png'" ></a> <a href="#" class="btn btn-small js-modal-close">Close</a> </footer>
+</div>
+
+<script>
+$(function(){
+
+var appendthis =  ("<div class='modal-overlay js-modal-close'></div>");
+
+	$('a[data-modal-id]').click(function(e) {
+		e.preventDefault();
+    $("body").append(appendthis);
+    $(".modal-overlay").fadeTo(500, 0.7);
+    //$(".js-modalbox").fadeIn(500);
+		var modalBox = $(this).attr('data-modal-id');
+		$('#'+modalBox).fadeIn($(this).data());
+	});  
+  
+  
+$(".js-modal-close, .modal-overlay").click(function() {
+    $(".modal-box, .modal-overlay").fadeOut(500, function() {
+        $(".modal-overlay").remove();
+    });
+ 
+});
+ 
+$(window).resize(function() {
+    $(".modal-box").css({
+        top: 50,
+        left: ($(window).width() - $(".modal-box").outerWidth()) / 2
+    });
+});
+ 
+$(window).resize();
+ 
+});
+</script>
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56c19937ed81d47a" async="async"></script>
+
+
+
+  
+</body>
+</html>

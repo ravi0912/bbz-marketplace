@@ -1,3 +1,9 @@
+/*html font declaration for all element*/
+html *
+{
+    font-family: Courier New;
+}
+
 /*left overlap bar starts*/
 .left_overlap{
     width:200px;

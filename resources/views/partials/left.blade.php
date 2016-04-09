@@ -7,7 +7,7 @@
                     <ul class="collapsible-body" style="margin-left:-30px">
                         @foreach($subcategories as $subcategory)
                             @if($subcategory->category_id == $category->id)
-                                <li><a href="#" class="sub_item collapsible-inner_header">{{$subcategory->name}}</a>
+                                <li><a href="{{ url('subCategory/'.$subcategory->id) }}" class="sub_item collapsible-inner_header">{{$subcategory->name}}</a>
                                     {{--<div class="collapsible-inner_body">
                                         <ul style="margin-left:-30px">
                                             <li><a href="#" class="sub-sub_item">Ceiling lighting</a></li>

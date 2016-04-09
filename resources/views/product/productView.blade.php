@@ -29,11 +29,18 @@
                                             <span> <strong>{{ $filter->data }}  </strong></span>
                                         @endif
                                     @endforeach
-                                        {{--<span style="font-weight:bold;font-size:1.2em">Seller details:</span><br>
-                                    AMG Home <span style="word-spacing:20px">Styling Ph:041-2323567</span><br>A-42,Bapu <span style="word-spacing:20px">Bazar, Mob:8011240690</span><br>Jaipur-302012--}}
+                                    {{--{{ $product->descriptions  }}--}}
+                                    @foreach($product->descriptions as $t)
+                                        @if($t->descriptionName->name == 'Image')
+                                            {{ $t->data  }}
+                                        @endif
+                                    @endforeach
+
+                                    {{--<span style="font-weight:bold;font-size:1.2em">Seller details:</span><br>
+                                AMG Home <span style="word-spacing:20px">Styling Ph:041-2323567</span><br>A-42,Bapu <span style="word-spacing:20px">Bazar, Mob:8011240690</span><br>Jaipur-302012--}}
                                     <strong>Available with</strong> <span style="font-weight:bold;color:#6262ff">8 sellers</span></p>
                                 <br>
-                                    <span style="font-weight:bold">Rating</span>  <span style="word-spacing:20px;font-weight:bold"><a href="#" style="color:#6262ff;font-weight:bold">4.1/5</a> Reviews</span>  <a href="#" style="color:#6262ff;font-weight:bold">52</a>
+                                <span style="font-weight:bold">Rating</span>  <span style="word-spacing:20px;font-weight:bold"><a href="#" style="color:#6262ff;font-weight:bold">4.1/5</a> Reviews</span>  <a href="#" style="color:#6262ff;font-weight:bold">52</a>
                             </div>
                         </div>
                     </div>
@@ -110,11 +117,11 @@
         </div>
 
     </div>
-</div>
+    </div>
 
 
 
-<!-- my script file-->
+    <!-- my script file-->
 
 
 @stop
