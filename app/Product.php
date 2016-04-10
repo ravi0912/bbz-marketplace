@@ -33,4 +33,9 @@ class Product extends Model
         return $this->hasOne('App\ThumbnailImage');
     }
 
+    public function productViews()
+    {
+        return $this->hasOne('App\ProductViews');
+    }
+
 }

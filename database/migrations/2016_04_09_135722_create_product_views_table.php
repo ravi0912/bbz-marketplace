@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateThumbnailImageTable extends Migration
+class CreateProductViewsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,11 +12,11 @@ class CreateThumbnailImageTable extends Migration
      */
     public function up()
     {
-        Schema::create('thumbnail_image', function (Blueprint $table) {
+        Schema::create('product_views', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('product_id')->unsigned();
             $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
-            $table->string('image_url');
+            $table->integer('views');
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ class CreateThumbnailImageTable extends Migration
      */
     public function down()
     {
-        Schema::drop('thumbnail_image');
+        Schema::drop('product_views');
     }
 }

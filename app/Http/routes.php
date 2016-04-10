@@ -11,6 +11,12 @@
 |
 */
 
+//routes for auth
+Route::controllers([
+    'auth' => 'Auth\AuthController',
+    'password' => 'Auth\PasswordController'
+]);
+
 /*
  * Landing Page
  * with full categorised product

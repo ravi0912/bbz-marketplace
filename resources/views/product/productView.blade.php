@@ -22,7 +22,7 @@
                         <div class="upper_right">
                             <div>
                                 <p ><span style="font-size:25px;color:#6262ff">{{ $product->name }} </span><br><span style="font-weight:bold;font-size:25px">Rs. 199/-</span><br><br>
-
+                                    No. of Views {{ $product->productViews->views }}
                                     <br>
                                     @foreach($product->filters as $filter)
                                         @if($filter->filterName->name == "Brand")
